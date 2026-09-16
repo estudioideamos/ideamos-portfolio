@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /ideamos-portfolio/
+Sitemap: https://estudioideamos.github.io/ideamos-portfolio/sitemap.xml
