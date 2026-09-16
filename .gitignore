@@ -3,3 +3,11 @@ repos.json
 audit.json
 tools/
 qa/
+_site/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

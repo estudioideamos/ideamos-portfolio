@@ -6,8 +6,7 @@ window.PROJECTS = [
     "sector": "Juegos & coleccionables",
     "description": "Una tienda especializada en TCG, juegos de mesa y accesorios.",
     "url": "",
-    "image": "assets/gravedad-store.jpg",
-    "private": false
+    "image": "assets/gravedad-store.webp"
   },
   {
     "id": "frosz-gelato-fit-demo",
@@ -16,8 +15,7 @@ window.PROJECTS = [
     "sector": "Alimentos & lifestyle",
     "description": "Una experiencia de marca llena de sabor, movimiento y personalidad.",
     "url": "https://frosz.com.ar/",
-    "image": "assets/frosz-gelato-fit-demo.jpg",
-    "private": false
+    "image": "assets/frosz-gelato-fit-demo.webp"
   },
   {
     "id": "mr-ingenieria-estructural",
@@ -26,8 +24,7 @@ window.PROJECTS = [
     "sector": "Ingeniería & construcción",
     "description": "Una presencia digital que transmite precisión, experiencia y confianza.",
     "url": "https://mringenieriaestructural.com.ar/",
-    "image": "assets/mr-ingenieria-estructural.jpg",
-    "private": false
+    "image": "assets/mr-ingenieria-estructural.webp"
   },
   {
     "id": "trebol-cafe",
@@ -36,8 +33,7 @@ window.PROJECTS = [
     "sector": "Café de especialidad",
     "description": "Diseño y experiencia de compra para una marca con identidad propia.",
     "url": "",
-    "image": "assets/trebol-cafe.jpg",
-    "private": false
+    "image": "assets/trebol-cafe.webp"
   },
   {
     "id": "grosz-training-web",
@@ -46,8 +42,7 @@ window.PROJECTS = [
     "sector": "Fitness & bienestar",
     "description": "Una propuesta visual con la energía de un entrenamiento a medida.",
     "url": "https://estudioideamos.github.io/grosz-training-web/",
-    "image": "assets/grosz-training-web.jpg",
-    "private": false
+    "image": "assets/grosz-training-web.webp"
   },
   {
     "id": "raisa-joya",
@@ -56,8 +51,7 @@ window.PROJECTS = [
     "sector": "Joyería & accesorios",
     "description": "Una vidriera digital donde cada pieza es protagonista.",
     "url": "",
-    "image": "assets/raisa-joya.jpg",
-    "private": false
+    "image": "assets/raisa-joya.webp"
   },
   {
     "id": "mosaicos-mc-web",
@@ -66,8 +60,7 @@ window.PROJECTS = [
     "sector": "Arquitectura & revestimientos",
     "description": "Catálogo visual de productos, materiales y posibilidades.",
     "url": "https://estudioideamos.github.io/mosaicos-mc-web/",
-    "image": "assets/mosaicos-mc-web.jpg",
-    "private": false
+    "image": "assets/mosaicos-mc-web.webp"
   },
   {
     "id": "byte-conectividad",
@@ -76,8 +69,7 @@ window.PROJECTS = [
     "sector": "Tecnología & conectividad",
     "description": "Servicios, cobertura y una experiencia pensada para conectar.",
     "url": "https://estudioideamos.github.io/byte-conectividad/",
-    "image": "assets/byte-conectividad.jpg",
-    "private": false
+    "image": "assets/byte-conectividad.webp"
   },
   {
     "id": "mirtatulaj",
@@ -86,8 +78,7 @@ window.PROJECTS = [
     "sector": "Moda & diseño",
     "description": "Una tienda online con una presentación cuidada de cada colección.",
     "url": "",
-    "image": "assets/mirtatulaj.jpg",
-    "private": false
+    "image": "assets/mirtatulaj.webp"
   },
   {
     "id": "supercoffee",
@@ -96,8 +87,7 @@ window.PROJECTS = [
     "sector": "Gastronomía",
     "description": "Café de especialidad con una experiencia digital de carácter editorial.",
     "url": "https://estudioideamos.github.io/supercoffee/",
-    "image": "assets/supercoffee.jpg",
-    "private": false
+    "image": "assets/supercoffee.webp"
   },
   {
     "id": "gama-seguridad",
@@ -106,8 +96,7 @@ window.PROJECTS = [
     "sector": "Seguridad integral",
     "description": "Una web institucional que comunica respaldo y profesionalismo.",
     "url": "https://seguridadgama.com.ar/",
-    "image": "assets/gama-seguridad.jpg",
-    "private": false
+    "image": "assets/gama-seguridad.webp"
   },
   {
     "id": "oner-vfx",
@@ -116,8 +105,7 @@ window.PROJECTS = [
     "sector": "Creatividad & producción",
     "description": "Un portfolio visual para un estudio de efectos visuales.",
     "url": "",
-    "image": "assets/oner-vfx.jpg",
-    "private": false
+    "image": "assets/oner-vfx.webp"
   },
   {
     "id": "dra-vanesa-klimaszewski",
@@ -126,8 +114,7 @@ window.PROJECTS = [
     "sector": "Salud & medicina",
     "description": "Una presencia cercana, clara y profesional para la atención médica.",
     "url": "https://doctoravanesaklima.com.ar/",
-    "image": "assets/dra-vanesa-klimaszewski.jpg",
-    "private": false
+    "image": "assets/dra-vanesa-klimaszewski.webp"
   },
   {
     "id": "psicoterapia-pyp",
@@ -136,8 +123,7 @@ window.PROJECTS = [
     "sector": "Salud & psicoterapia",
     "description": "Un sitio institucional pensado para acompañar y facilitar el contacto.",
     "url": "https://psicoterapiapyp.com/",
-    "image": "assets/psicoterapia-pyp.jpg",
-    "private": false
+    "image": "assets/psicoterapia-pyp.webp"
   },
   {
     "id": "berenice-cura",
@@ -146,8 +132,7 @@ window.PROJECTS = [
     "sector": "Comunidad & cultura",
     "description": "Un espacio accesible para la asociación y el proyecto de Berenice Cura.",
     "url": "https://estudioideamos.github.io/berenice-cura/",
-    "image": "assets/berenice-cura.jpg",
-    "private": false
+    "image": "assets/berenice-cura.webp"
   },
   {
     "id": "hvac-prof-demo",
@@ -156,8 +141,7 @@ window.PROJECTS = [
     "sector": "Industria & climatización",
     "description": "Servicios, productos y proyectos con una comunicación técnica clara.",
     "url": "https://estudioideamos.github.io/hvac-prof-demo/",
-    "image": "assets/hvac-prof-demo.jpg",
-    "private": false
+    "image": "assets/hvac-prof-demo.webp"
   },
   {
     "id": "aurea-propiedades",
@@ -166,8 +150,7 @@ window.PROJECTS = [
     "sector": "Real estate · Demo",
     "description": "Una propuesta inmobiliaria con catálogo y búsqueda de propiedades.",
     "url": "https://estudioideamos.github.io/aurea-propiedades/",
-    "image": "assets/aurea-propiedades.jpg",
-    "private": false
+    "image": "assets/aurea-propiedades.webp"
   },
   {
     "id": "exelsia-sistema",
@@ -176,8 +159,7 @@ window.PROJECTS = [
     "sector": "Gestión & comercio exterior",
     "description": "Una plataforma para organizar operaciones, clientes y documentación.",
     "url": "https://exelsia-sistema.vercel.app",
-    "image": "assets/exelsia-sistema.jpg",
-    "private": false
+    "image": "assets/exelsia-sistema.webp"
   },
   {
     "id": "ideamos-inmobiliarias-app",
@@ -186,8 +168,7 @@ window.PROJECTS = [
     "sector": "Gestión inmobiliaria",
     "description": "Sitio web y gestión de propiedades con integración de Tokko Broker.",
     "url": "https://propiedades.ideamos.ar/",
-    "image": "assets/ideamos-inmobiliarias-app.jpg",
-    "private": false
+    "image": "assets/ideamos-inmobiliarias-app.webp"
   },
   {
     "id": "ivess-reggieri-pedidos-demo",
@@ -196,8 +177,7 @@ window.PROJECTS = [
     "sector": "Pedidos & atención al cliente",
     "description": "Un canal digital para pedidos, consultas y alta de nuevos clientes.",
     "url": "https://app.ivessreggieri.com.ar/",
-    "image": "assets/ivess-reggieri-pedidos-demo.jpg",
-    "private": false
+    "image": "assets/ivess-reggieri-pedidos-demo.webp"
   },
   {
     "id": "29bis-cotizador",
@@ -206,8 +186,7 @@ window.PROJECTS = [
     "sector": "Cotización & impresión",
     "description": "Una herramienta para configurar impresiones y cotizar pedidos online.",
     "url": "https://cotizador.29bis.com.ar/",
-    "image": "assets/29bis-cotizador.jpg",
-    "private": false
+    "image": "assets/29bis-cotizador.webp"
   },
   {
     "id": "presupuestos-app",
@@ -216,8 +195,7 @@ window.PROJECTS = [
     "sector": "Gestión comercial",
     "description": "Creación de propuestas comerciales y presupuestos en PDF.",
     "url": "https://estudioideamos.github.io/presupuestos-app/",
-    "image": "assets/presupuestos-app.jpg",
-    "private": false
+    "image": "assets/presupuestos-app.webp"
   },
   {
     "id": "ideamos-google-ads-brief",
@@ -226,8 +204,7 @@ window.PROJECTS = [
     "sector": "Formularios & automatización",
     "description": "Un recorrido guiado para organizar la información de cada campaña.",
     "url": "https://ads.ideamos.com.ar/",
-    "image": "assets/ideamos-google-ads-brief.jpg",
-    "private": false
+    "image": "assets/ideamos-google-ads-brief.webp"
   },
   {
     "id": "app-form-ecommerce-ideamos",
@@ -236,8 +213,7 @@ window.PROJECTS = [
     "sector": "Formularios & automatización",
     "description": "Una herramienta para reunir el material de nuevos proyectos ecommerce.",
     "url": "https://tienda.ideamos.com.ar/",
-    "image": "assets/app-form-ecommerce-ideamos.jpg",
-    "private": false
+    "image": "assets/app-form-ecommerce-ideamos.webp"
   },
   {
     "id": "woocommerce-cuotas-sin-interes",
@@ -246,8 +222,7 @@ window.PROJECTS = [
     "sector": "Extensión para tiendas online",
     "description": "Desarrollo para WooCommerce que permite mostrar y administrar cuotas sin interés.",
     "url": "",
-    "image": "",
-    "private": true
+    "image": ""
   },
   {
     "id": "woocommerce-product-badges-manager",
@@ -256,7 +231,6 @@ window.PROJECTS = [
     "sector": "Extensión para tiendas online",
     "description": "Desarrollo para WooCommerce para gestionar etiquetas visuales de productos.",
     "url": "",
-    "image": "",
-    "private": true
+    "image": ""
   }
 ];
