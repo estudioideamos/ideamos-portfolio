@@ -1,5 +1,43 @@
 window.PROJECTS = [
   {
+    "id": "bogan",
+    "name": "Bogan Sukaldeak",
+    "category": "corporativos",
+    "sector": "Cocinas & mobiliario a medida",
+    "description": "Sitio corporativo de una empresa de Azpeitia dedicada al diseño, fabricación e instalación de cocinas, armarios y mobiliario a medida. Presenta sus servicios y proyectos, responde preguntas frecuentes y facilita el contacto para iniciar una propuesta personalizada.",
+    "features": [
+      "Servicios a medida",
+      "Portfolio de proyectos",
+      "Preguntas frecuentes",
+      "Contacto y asesoramiento"
+    ],
+    "technologies": [
+      "WordPress",
+      "Elementor",
+      "Slider Revolution",
+      "CSS3",
+      "JavaScript"
+    ],
+    "theme": "sand",
+    "url": "https://ideamos.ar/bogan/",
+    "image": "assets/bogan.webp",
+    "cover": "assets/cover-bogan.webp",
+    "mobile": "assets/mobile-bogan.webp",
+    "isNew": true,
+    "imageWidth": 2400,
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688,
+    "thumb": "assets/thumb-bogan.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-bogan.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-bogan.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-bogan.webp",
+    "phoneThumbLargeWidth": 390
+  },
+  {
     "id": "sphere-design",
     "name": "Sphere Design",
     "category": "corporativos",
@@ -1286,4 +1324,3 @@ window.PROJECTS = [
     ]
   }
 ];
-
