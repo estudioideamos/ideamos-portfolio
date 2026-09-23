@@ -63,3 +63,9 @@ El validador exige variantes responsivas y limita el peso de las miniaturas a 2 
 Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. La descarga de miniaturas comienza a 300 px del área visible. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.
 
 La ficha presenta un mockup grande de escritorio y celular, sin repetir la tarjeta de la galería, con la información al costado en escritorio y debajo en móvil. Incluye navegación anterior/siguiente dentro del filtro y búsqueda activos, también con las teclas izquierda/derecha. Mantiene descripción, características, tecnologías disponibles y enlace Visitar sitio. Las flechas circulares giran 45 grados con hover/foco y respetan movimiento reducido.
+
+## Heroes móviles actualizados
+
+Se centraron los títulos, textos introductorios y llamadas a la acción en Sphere Design, Editorial Argenta, KRK Latinoamericana, Stroma Services, MR Ingeniería, Grosz Training, Mosaicos MC, Supercoffee, Dra. Vanesa Klimaszewski y Áurea Propiedades. En Brief Google Ads y Brief Ecommerce se centró la introducción, preservando la alineación de los formularios. Los cambios se limitan a pantallas de hasta 767 px.
+
+Los mockups móviles del catálogo se renovaron con capturas reales de esas 12 publicaciones, a 390 × 844 y densidad 2x, más variantes WebP para la galería. La alineación se revisó en 320, 390 y 767 px y se verificaron las publicaciones antes de renovar las capturas.
