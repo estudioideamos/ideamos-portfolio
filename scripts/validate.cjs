@@ -19,7 +19,7 @@ for (const p of projects) {
   assert(['tiendas', 'corporativos', 'apps'].includes(p.category), `Invalid category: ${p.id}`);
   for (const key of ['name', 'sector', 'description']) assert(typeof p[key] === 'string' && p[key].trim(), `Missing ${key}: ${p.id}`);
   if (p.url) { const url = new URL(p.url); assert(url.protocol === 'https:' && !url.username && !url.password, `Unsafe URL: ${p.id}`); }
-  for (const field of ['image', 'cover', 'mobile']) if (p[field]) local(p[field]);
+  for (const field of ['image', 'thumb', 'thumbLarge', 'phoneThumb', 'phoneThumbLarge']) if (p[field]) local(p[field]);
   if (p.theme) assert(['slate','sand','olive','lilac','coral','ice','charcoal','orange'].includes(p.theme), 'Invalid cover theme');
   for (const key of ['technologies','features']) if (p[key]) assert(Array.isArray(p[key]) && p[key].every(v => typeof v === 'string' && v.trim()), 'Invalid project details');
 }
@@ -36,7 +36,15 @@ for (const file of files) {
   assert(stat.size < 2 * 1024 * 1024, `Asset exceeds 2 MB: ${file}`);
   total += stat.size;
 }
-assert(total < 8 * 1024 * 1024, 'Site exceeds 8 MB');
+assert(total < 16 * 1024 * 1024, 'Site exceeds 16 MB including on-demand detail images');
+const galleryBytes = projects.reduce((sum, p) => sum + ['thumb', 'phoneThumb'].reduce((n, key) => n + (p[key] ? fs.statSync(path.join(root, p[key])).size : 0), 0), 0);
+assert(galleryBytes < 2 * 1024 * 1024, 'Small gallery images exceed 2 MB');
+for (const p of projects.filter(p => p.image)) {
+  for (const key of ['thumb','thumbLarge','phoneThumb','phoneThumbLarge']) {
+    assert(p[key] && Number.isInteger(p[key + 'Width']) && p[key + 'Width'] > 0, `Missing responsive asset: ${p.id}/${key}`);
+  }
+  assert(p.imageWidth > 0 && p.imageHeight > 0, `Missing detail dimensions: ${p.id}`);
+}
 const html = read('index.html');
 assert(html.includes('Content-Security-Policy') && html.includes("script-src 'self'"), 'Missing script policy');
 assert(!/<script\b[^>]*>(?!\s*<\/script>)[\s\S]*?<\/script>/i.test(html), 'Inline scripts are not permitted');

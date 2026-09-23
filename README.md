@@ -52,3 +52,12 @@ Ver [cómo contribuir](CONTRIBUTING.md) y la [política de seguridad](SECURITY.m
 El catálogo reúne proyectos de las cuentas `estudioideamos` e `ideamosestudio`. Cada ficha puede incluir `features` y `technologies` (listas de textos), `cover` (captura de escritorio), `mobile` (captura móvil), `theme` (slate, sand, olive, lilac, coral, ice, charcoal u orange) e `isNew` (destacado visual).
 
 `image` conserva la vista ampliada. Las portadas se componen con CSS y capturas reales, sin simular interfaces que el proyecto no tiene. Si no hay captura móvil, se muestra solamente escritorio. Las tecnologías se verifican con los archivos y dependencias del repositorio; en los trabajos históricos sin código disponible, la ficha muestra la descripción y el alcance visual sin atribuirles tecnologías no confirmadas.
+
+## Rendimiento de las imágenes
+
+La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThumbLarge`) con sus anchos reales, `srcset`, carga diferida y dimensiones reservadas. Las imágenes de detalle solo se solicitan al abrir la ficha. Los originales de captura (`cover` y `mobile`) no forman parte del despliegue; se conservan en el repositorio como fuentes. Gravedad utiliza una vista estática del encabezado y hero originales del tema. Las extensiones WooCommerce usan interfaces ilustrativas identificadas como tales.
+
+El validador exige variantes responsivas y limita el peso de las miniaturas a 2 MB para todo el catálogo y el sitio completo a 16 MB, incluyendo detalles bajo demanda.
+## Verificación de rendimiento
+
+Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. La descarga de miniaturas comienza a 300 px del área visible. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.

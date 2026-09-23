@@ -19,7 +19,17 @@ window.PROJECTS = [
     "technologies": [
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-sphere-design.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-sphere-design.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-sphere-design.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-sphere-design.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "editorial-argenta",
@@ -46,7 +56,17 @@ window.PROJECTS = [
       "Tailwind CSS",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-editorial-argenta.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-editorial-argenta.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-editorial-argenta.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-editorial-argenta.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "mayorista-2020",
@@ -70,7 +90,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-mayorista-2020.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-mayorista-2020.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-mayorista-2020.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-mayorista-2020.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "aquapuel",
@@ -99,7 +129,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-aquapuel.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-aquapuel.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-aquapuel.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-aquapuel.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "maguimel",
@@ -127,7 +167,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-maguimel.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-maguimel.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-maguimel.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-maguimel.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "krk-latinoamericana",
@@ -154,7 +204,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-krk-latinoamericana.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-krk-latinoamericana.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-krk-latinoamericana.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-krk-latinoamericana.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "glix",
@@ -177,7 +237,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-glix.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-glix.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-glix.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-glix.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "vatten",
@@ -201,7 +271,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-vatten.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-vatten.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-vatten.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-vatten.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "stroma",
@@ -228,7 +308,17 @@ window.PROJECTS = [
       "Tailwind CSS",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-stroma.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-stroma.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-stroma.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-stroma.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "ideamosdemo",
@@ -254,7 +344,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-ideamosdemo.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-ideamosdemo.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-ideamosdemo.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-ideamosdemo.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "ideamos-internacional",
@@ -281,7 +381,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-ideamos-internacional.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-ideamos-internacional.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-ideamos-internacional.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-internacional.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "gravedad-store",
@@ -303,7 +413,20 @@ window.PROJECTS = [
       "PHP",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "cover": "assets/cover-gravedad-store.webp",
+    "mobile": "assets/mobile-gravedad-store.webp",
+    "previewNote": "Vista del diseño original del proyecto.",
+    "thumb": "assets/thumb-gravedad-store.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-gravedad-store.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-gravedad-store.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-gravedad-store.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "frosz-gelato-fit-demo",
@@ -325,7 +448,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-frosz-gelato-fit-demo.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-frosz-gelato-fit-demo.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-frosz-gelato-fit-demo.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-frosz-gelato-fit-demo.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "mr-ingenieria-estructural",
@@ -347,7 +480,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-mr-ingenieria-estructural.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-mr-ingenieria-estructural.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-mr-ingenieria-estructural.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-mr-ingenieria-estructural.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "trebol-cafe",
@@ -362,7 +505,17 @@ window.PROJECTS = [
       "Catálogo comercial",
       "Presentación de productos",
       "Diseño ecommerce"
-    ]
+    ],
+    "thumb": "assets/thumb-trebol-cafe.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-trebol-cafe.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-trebol-cafe.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-trebol-cafe.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 755
   },
   {
     "id": "grosz-training-web",
@@ -387,7 +540,17 @@ window.PROJECTS = [
       "Vite",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-grosz-training-web.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-grosz-training-web.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-grosz-training-web.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-grosz-training-web.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "raisa-joya",
@@ -402,7 +565,17 @@ window.PROJECTS = [
       "Catálogo de joyería",
       "Colecciones",
       "Diseño ecommerce"
-    ]
+    ],
+    "thumb": "assets/thumb-raisa-joya.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-raisa-joya.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-raisa-joya.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-raisa-joya.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 755
   },
   {
     "id": "mosaicos-mc-web",
@@ -424,7 +597,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-mosaicos-mc-web.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-mosaicos-mc-web.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-mosaicos-mc-web.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-mosaicos-mc-web.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 2400,
+    "imageHeight": 1667
   },
   {
     "id": "byte-conectividad",
@@ -450,7 +633,17 @@ window.PROJECTS = [
       "PHP",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-byte-conectividad.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-byte-conectividad.webp",
+    "thumbLargeWidth": 1200,
+    "phoneThumb": "assets/phoneThumb-byte-conectividad.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-byte-conectividad.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "mirtatulaj",
@@ -465,7 +658,17 @@ window.PROJECTS = [
       "Colecciones de moda",
       "Catálogo de productos",
       "Diseño ecommerce"
-    ]
+    ],
+    "thumb": "assets/thumb-mirtatulaj.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-mirtatulaj.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-mirtatulaj.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-mirtatulaj.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 755
   },
   {
     "id": "supercoffee",
@@ -491,7 +694,17 @@ window.PROJECTS = [
       "CSS3",
       "JavaScript",
       "GSAP"
-    ]
+    ],
+    "thumb": "assets/thumb-supercoffee.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-supercoffee.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-supercoffee.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-supercoffee.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "gama-seguridad",
@@ -514,7 +727,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-gama-seguridad.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-gama-seguridad.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-gama-seguridad.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-gama-seguridad.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1444
   },
   {
     "id": "oner-vfx",
@@ -529,7 +752,17 @@ window.PROJECTS = [
       "Portfolio audiovisual",
       "Proyectos destacados",
       "Presentación del estudio"
-    ]
+    ],
+    "thumb": "assets/thumb-oner-vfx.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-oner-vfx.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-oner-vfx.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-oner-vfx.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 755
   },
   {
     "id": "dra-vanesa-klimaszewski",
@@ -552,7 +785,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-dra-vanesa-klimaszewski.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-dra-vanesa-klimaszewski.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-dra-vanesa-klimaszewski.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-dra-vanesa-klimaszewski.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "psicoterapia-pyp",
@@ -573,7 +816,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-psicoterapia-pyp.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-psicoterapia-pyp.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-psicoterapia-pyp.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-psicoterapia-pyp.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 1319
   },
   {
     "id": "berenice-cura",
@@ -596,7 +849,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-berenice-cura.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-berenice-cura.webp",
+    "thumbLargeWidth": 1000,
+    "phoneThumb": "assets/phoneThumb-berenice-cura.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-berenice-cura.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1000,
+    "imageHeight": 1319
   },
   {
     "id": "hvac-prof-demo",
@@ -619,7 +882,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-hvac-prof-demo.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-hvac-prof-demo.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-hvac-prof-demo.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-hvac-prof-demo.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "aurea-propiedades",
@@ -645,7 +918,17 @@ window.PROJECTS = [
       "Tailwind CSS",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-aurea-propiedades.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-aurea-propiedades.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-aurea-propiedades.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-aurea-propiedades.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "exelsia-sistema",
@@ -672,7 +955,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-exelsia-sistema.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-exelsia-sistema.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-exelsia-sistema.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-exelsia-sistema.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 764
   },
   {
     "id": "ideamos-inmobiliarias-app",
@@ -699,7 +992,17 @@ window.PROJECTS = [
       "PHP",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-ideamos-inmobiliarias-app.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-ideamos-inmobiliarias-app.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-ideamos-inmobiliarias-app.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-inmobiliarias-app.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "ivess-reggieri-pedidos-demo",
@@ -721,7 +1024,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-ivess-reggieri-pedidos-demo.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-ivess-reggieri-pedidos-demo.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-ivess-reggieri-pedidos-demo.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-ivess-reggieri-pedidos-demo.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 764
   },
   {
     "id": "29bis-cotizador",
@@ -743,7 +1056,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-29bis-cotizador.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-29bis-cotizador.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-29bis-cotizador.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-29bis-cotizador.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1318
   },
   {
     "id": "presupuestos-app",
@@ -765,7 +1088,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-presupuestos-app.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-presupuestos-app.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-presupuestos-app.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-presupuestos-app.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1604
   },
   {
     "id": "ideamos-google-ads-brief",
@@ -787,7 +1120,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-ideamos-google-ads-brief.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-ideamos-google-ads-brief.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-ideamos-google-ads-brief.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-google-ads-brief.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1112
   },
   {
     "id": "app-form-ecommerce-ideamos",
@@ -809,7 +1152,17 @@ window.PROJECTS = [
       "HTML5",
       "CSS3",
       "JavaScript"
-    ]
+    ],
+    "thumb": "assets/thumb-app-form-ecommerce-ideamos.webp",
+    "thumbWidth": 480,
+    "thumbLarge": "assets/thumbLarge-app-form-ecommerce-ideamos.webp",
+    "thumbLargeWidth": 1100,
+    "phoneThumb": "assets/phoneThumb-app-form-ecommerce-ideamos.webp",
+    "phoneThumbWidth": 180,
+    "phoneThumbLarge": "assets/phoneThumbLarge-app-form-ecommerce-ideamos.webp",
+    "phoneThumbLargeWidth": 390,
+    "imageWidth": 1100,
+    "imageHeight": 1315
   },
   {
     "id": "woocommerce-cuotas-sin-interes",
