@@ -1,236 +1,858 @@
 window.PROJECTS = [
   {
+    "id": "sphere-design",
+    "name": "Sphere Design",
+    "category": "corporativos",
+    "sector": "Arquitectura & visualización 3D",
+    "description": "Sitio de un estudio de visualización arquitectónica de Miami. Presenta renders, películas y experiencias inmersivas mediante un portfolio visual y un recorrido editorial por sus servicios.",
+    "features": [
+      "Portfolio de proyectos",
+      "Presentación de servicios",
+      "Contenido audiovisual"
+    ],
+    "theme": "sand",
+    "url": "https://estudioideamos.github.io/sphere-design/",
+    "image": "assets/sphere-design.webp",
+    "isNew": true,
+    "cover": "assets/cover-sphere-design.webp",
+    "mobile": "assets/mobile-sphere-design.webp",
+    "technologies": [
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "editorial-argenta",
+    "name": "Editorial Argenta",
+    "category": "corporativos",
+    "sector": "Editorial & cultura",
+    "description": "Sitio de una editorial que acompaña a autores desde la edición hasta la difusión. Reúne el catálogo de libros, lanzamientos y servicios editoriales con una navegación centrada en cada obra.",
+    "features": [
+      "Catálogo de libros",
+      "Lanzamientos",
+      "Servicios editoriales"
+    ],
+    "theme": "coral",
+    "url": "https://ideamosestudio.github.io/editorial-argenta/",
+    "image": "assets/editorial-argenta.webp",
+    "isNew": true,
+    "cover": "assets/cover-editorial-argenta.webp",
+    "mobile": "assets/mobile-editorial-argenta.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "mayorista-2020",
+    "name": "Mayorista 2020",
+    "category": "corporativos",
+    "sector": "Comercio mayorista",
+    "description": "Sitio comercial de un mayorista de bebidas y alimentos. Explica las modalidades de compra, presenta productos y sucursales y facilita las consultas por WhatsApp.",
+    "features": [
+      "Productos",
+      "Sucursales",
+      "Consultas por WhatsApp"
+    ],
+    "theme": "orange",
+    "url": "https://estudioideamos.github.io/mayorista-2020/",
+    "image": "assets/mayorista-2020.webp",
+    "isNew": true,
+    "cover": "assets/cover-mayorista-2020.webp",
+    "mobile": "assets/mobile-mayorista-2020.webp",
+    "technologies": [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "aquapuel",
+    "name": "Aquapuel",
+    "category": "corporativos",
+    "sector": "Agua & distribución",
+    "description": "Sitio institucional para una empresa de agua en bidones. Presenta formatos, procesos de tratamiento y soluciones para hogares y oficinas, con accesos directos para consultar y coordinar pedidos.",
+    "features": [
+      "Líneas de producto",
+      "Hogares y empresas",
+      "Contacto comercial"
+    ],
+    "theme": "ice",
+    "url": "https://ideamosestudio.github.io/aquapuel/",
+    "image": "assets/aquapuel.webp",
+    "isNew": true,
+    "cover": "assets/cover-aquapuel.webp",
+    "mobile": "assets/mobile-aquapuel.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "maguimel",
+    "name": "Textil Maguimel",
+    "category": "corporativos",
+    "sector": "Industria textil",
+    "description": "Web de una fábrica de uniformes escolares, prendas publicitarias e indumentaria de trabajo. Organiza sus líneas de producción y explica el proceso para solicitar prendas a medida.",
+    "features": [
+      "Líneas de indumentaria",
+      "Proceso de producción",
+      "Solicitud de presupuesto"
+    ],
+    "theme": "olive",
+    "url": "https://textilmaguimel.com.ar/",
+    "image": "assets/maguimel.webp",
+    "isNew": true,
+    "cover": "assets/cover-maguimel.webp",
+    "mobile": "assets/mobile-maguimel.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "krk-latinoamericana",
+    "name": "KRK Latinoamericana",
+    "category": "corporativos",
+    "sector": "Ingeniería & industria",
+    "description": "Sitio corporativo de una empresa de ingeniería para el manejo de materiales a granel. Presenta su experiencia, productos y servicios con contenidos en español e inglés.",
+    "features": [
+      "Presentación institucional",
+      "Productos y servicios",
+      "Español e inglés"
+    ],
+    "theme": "slate",
+    "url": "https://ideamosestudio.github.io/krk-latinoamericana/",
+    "image": "assets/krk-latinoamericana.webp",
+    "isNew": true,
+    "cover": "assets/cover-krk-latinoamericana.webp",
+    "mobile": "assets/mobile-krk-latinoamericana.webp",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "glix",
+    "name": "GLIX ERP",
+    "category": "corporativos",
+    "sector": "Software & gestión empresarial",
+    "description": "Sitio comercial que presenta una solución ERP para empresas. Explica los módulos de transporte, proveedores, recursos humanos y ventas móviles, y orienta al visitante hacia una consulta de asesoramiento.",
+    "features": [
+      "Presentación del ERP",
+      "Páginas de módulos",
+      "Consultas comerciales"
+    ],
+    "theme": "lilac",
+    "url": "https://glixerp.com/",
+    "image": "assets/glix.webp",
+    "isNew": true,
+    "cover": "assets/cover-glix.webp",
+    "mobile": "assets/mobile-glix.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "vatten",
+    "name": "Vatten",
+    "category": "corporativos",
+    "sector": "Tratamiento de aguas industriales",
+    "description": "Sitio institucional de una empresa de tratamiento de aguas industriales. Presenta soluciones para calderas, enfriamiento, ósmosis y efluentes, con información técnica y contacto con especialistas.",
+    "features": [
+      "Áreas de servicio",
+      "Información técnica",
+      "Consulta con especialistas"
+    ],
+    "theme": "ice",
+    "url": "https://ideamosestudio.github.io/vatten/",
+    "image": "assets/vatten.webp",
+    "isNew": true,
+    "cover": "assets/cover-vatten.webp",
+    "mobile": "assets/mobile-vatten.webp",
+    "technologies": [
+      "Vite",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "stroma",
+    "name": "Stroma Services",
+    "category": "corporativos",
+    "sector": "Consultoría & servicios críticos",
+    "description": "Sitio de una consultora especializada en la gestión estratégica de alimentación y facility management. Explica su metodología, experiencia y propuesta de valor para organizaciones que necesitan contratar y supervisar servicios críticos.",
+    "features": [
+      "Metodología de trabajo",
+      "Sectores de experiencia",
+      "Solicitud de reunión"
+    ],
+    "theme": "olive",
+    "url": "https://stromaservices.com/",
+    "image": "assets/stroma.webp",
+    "isNew": true,
+    "cover": "assets/cover-stroma.webp",
+    "mobile": "assets/mobile-stroma.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "ideamosdemo",
+    "name": "Ideamos Argentina",
+    "category": "corporativos",
+    "sector": "Diseño & marketing digital",
+    "description": "Sitio institucional de nuestro estudio. Reúne diseño web, ecommerce, posicionamiento y marketing digital con trabajos, testimonios y distintas vías de consulta para nuevos proyectos.",
+    "features": [
+      "Servicios digitales",
+      "Portfolio visual",
+      "Consultas comerciales"
+    ],
+    "theme": "charcoal",
+    "url": "https://ideamos.com.ar/",
+    "image": "assets/ideamosdemo.webp",
+    "isNew": true,
+    "cover": "assets/cover-ideamosdemo.webp",
+    "mobile": "assets/mobile-ideamosdemo.webp",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "ideamos-internacional",
+    "name": "Ideamos Internacional",
+    "category": "corporativos",
+    "sector": "Diseño & marketing digital",
+    "description": "Versión internacional de la presencia digital de Ideamos. Presenta los servicios del estudio y una selección de trabajos para acercar nuestra propuesta a clientes de otros mercados.",
+    "features": [
+      "Servicios del estudio",
+      "Trabajos realizados",
+      "Contacto comercial"
+    ],
+    "theme": "orange",
+    "url": "https://estudioideamos.com/",
+    "image": "assets/ideamos-internacional.webp",
+    "isNew": true,
+    "cover": "assets/cover-ideamos-internacional.webp",
+    "mobile": "assets/mobile-ideamos-internacional.webp",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
+  },
+  {
     "id": "gravedad-store",
     "name": "Gravedad Store",
     "category": "tiendas",
     "sector": "Juegos & coleccionables",
-    "description": "Una tienda especializada en TCG, juegos de mesa y accesorios.",
+    "description": "Tienda especializada en cartas coleccionables, juegos de mesa y accesorios. El desarrollo integra catálogo, fichas de producto, favoritos, carrito y proceso de compra sobre WordPress y WooCommerce.",
     "url": "",
-    "image": "assets/gravedad-store.webp"
+    "image": "assets/gravedad-store.webp",
+    "features": [
+      "Catálogo y búsqueda",
+      "Carrito y checkout",
+      "Favoritos"
+    ],
+    "theme": "lilac",
+    "technologies": [
+      "WordPress",
+      "WooCommerce",
+      "PHP",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "frosz-gelato-fit-demo",
     "name": "Frosz × Gelato Fit",
     "category": "corporativos",
     "sector": "Alimentos & lifestyle",
-    "description": "Una experiencia de marca llena de sabor, movimiento y personalidad.",
+    "description": "Experiencia de marca para una línea de gelato proteico. El sitio permite explorar sabores, conocer la propuesta de Frosz y encontrar dónde comprar, con una presentación visual dinámica del producto.",
     "url": "https://frosz.com.ar/",
-    "image": "assets/frosz-gelato-fit-demo.webp"
+    "image": "assets/frosz-gelato-fit-demo.webp",
+    "features": [
+      "Explorador de sabores",
+      "Animaciones",
+      "Puntos de venta"
+    ],
+    "theme": "sand",
+    "cover": "assets/cover-frosz-gelato-fit-demo.webp",
+    "mobile": "assets/mobile-frosz-gelato-fit-demo.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "mr-ingenieria-estructural",
     "name": "MR Ingeniería",
     "category": "corporativos",
     "sector": "Ingeniería & construcción",
-    "description": "Una presencia digital que transmite precisión, experiencia y confianza.",
+    "description": "Web de un estudio de cálculo y diseño estructural. Presenta su especialidad, servicios y proyectos para que particulares y empresas puedan conocer su trabajo y solicitar un presupuesto.",
     "url": "https://mringenieriaestructural.com.ar/",
-    "image": "assets/mr-ingenieria-estructural.webp"
+    "image": "assets/mr-ingenieria-estructural.webp",
+    "features": [
+      "Servicios de ingeniería",
+      "Galería de proyectos",
+      "Contacto comercial"
+    ],
+    "theme": "slate",
+    "cover": "assets/cover-mr-ingenieria-estructural.webp",
+    "mobile": "assets/mobile-mr-ingenieria-estructural.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "trebol-cafe",
     "name": "Trébol Café",
     "category": "tiendas",
     "sector": "Café de especialidad",
-    "description": "Diseño y experiencia de compra para una marca con identidad propia.",
+    "description": "Tienda online de café y equipamiento. La propuesta organiza productos para que el visitante pueda explorar la oferta y conocer las opciones de la marca en una experiencia de compra con identidad visual propia.",
     "url": "",
-    "image": "assets/trebol-cafe.webp"
+    "image": "assets/trebol-cafe.webp",
+    "theme": "olive",
+    "features": [
+      "Catálogo comercial",
+      "Presentación de productos",
+      "Diseño ecommerce"
+    ]
   },
   {
     "id": "grosz-training-web",
     "name": "Grosz Training",
     "category": "corporativos",
     "sector": "Fitness & bienestar",
-    "description": "Una propuesta visual con la energía de un entrenamiento a medida.",
+    "description": "Sitio para un servicio de entrenamiento y nutrición personalizada. Explica el método de trabajo, presenta planes y resultados y facilita el primer contacto con el entrenador.",
     "url": "https://estudioideamos.github.io/grosz-training-web/",
-    "image": "assets/grosz-training-web.webp"
+    "image": "assets/grosz-training-web.webp",
+    "features": [
+      "Método de trabajo",
+      "Planes y servicios",
+      "Resultados"
+    ],
+    "theme": "coral",
+    "cover": "assets/cover-grosz-training-web.webp",
+    "mobile": "assets/mobile-grosz-training-web.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "raisa-joya",
     "name": "Raisa Joya",
     "category": "tiendas",
     "sector": "Joyería & accesorios",
-    "description": "Una vidriera digital donde cada pieza es protagonista.",
+    "description": "Tienda online de joyería y accesorios. El diseño pone las piezas en primer plano y organiza la colección para facilitar el descubrimiento de productos y la navegación del catálogo.",
     "url": "",
-    "image": "assets/raisa-joya.webp"
+    "image": "assets/raisa-joya.webp",
+    "theme": "sand",
+    "features": [
+      "Catálogo de joyería",
+      "Colecciones",
+      "Diseño ecommerce"
+    ]
   },
   {
     "id": "mosaicos-mc-web",
     "name": "Mosaicos MC",
     "category": "corporativos",
     "sector": "Arquitectura & revestimientos",
-    "description": "Catálogo visual de productos, materiales y posibilidades.",
+    "description": "Catálogo digital de una fábrica de mosaicos y revestimientos. Permite recorrer materiales, conocer aplicaciones y reunir productos de interés para solicitar asesoramiento comercial.",
     "url": "https://estudioideamos.github.io/mosaicos-mc-web/",
-    "image": "assets/mosaicos-mc-web.webp"
+    "image": "assets/mosaicos-mc-web.webp",
+    "features": [
+      "Catálogo de productos",
+      "Obras y aplicaciones",
+      "Consulta de presupuesto"
+    ],
+    "theme": "sand",
+    "cover": "assets/cover-mosaicos-mc-web.webp",
+    "mobile": "assets/mobile-mosaicos-mc-web.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "byte-conectividad",
     "name": "Byte Conectividad",
     "category": "corporativos",
     "sector": "Tecnología & conectividad",
-    "description": "Servicios, cobertura y una experiencia pensada para conectar.",
+    "description": "Sitio de un proveedor de internet regional. Organiza sus servicios y cobertura para hogares y empresas, presenta la compañía y facilita consultas sobre conexión y atención al cliente.",
     "url": "https://estudioideamos.github.io/byte-conectividad/",
-    "image": "assets/byte-conectividad.webp"
+    "image": "assets/byte-conectividad.webp",
+    "features": [
+      "Servicios y cobertura",
+      "Contacto comercial",
+      "Acceso de clientes"
+    ],
+    "theme": "slate",
+    "cover": "assets/cover-byte-conectividad.webp",
+    "mobile": "assets/mobile-byte-conectividad.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "PHP",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "mirtatulaj",
     "name": "Mirtatulaj",
     "category": "tiendas",
     "sector": "Moda & diseño",
-    "description": "Una tienda online con una presentación cuidada de cada colección.",
+    "description": "Tienda online de moda. Combina una presentación visual de las colecciones con un catálogo que permite recorrer la propuesta de indumentaria de la marca.",
     "url": "",
-    "image": "assets/mirtatulaj.webp"
+    "image": "assets/mirtatulaj.webp",
+    "theme": "coral",
+    "features": [
+      "Colecciones de moda",
+      "Catálogo de productos",
+      "Diseño ecommerce"
+    ]
   },
   {
     "id": "supercoffee",
     "name": "Supercoffee",
     "category": "corporativos",
     "sector": "Gastronomía",
-    "description": "Café de especialidad con una experiencia digital de carácter editorial.",
+    "description": "Experiencia de marca para una cafetería de especialidad. Combina una presentación editorial del café con su origen, carta y momentos de consumo, invitando a conocer el local.",
     "url": "https://estudioideamos.github.io/supercoffee/",
-    "image": "assets/supercoffee.webp"
+    "image": "assets/supercoffee.webp",
+    "features": [
+      "Carta de productos",
+      "Historia y origen",
+      "Contenido audiovisual"
+    ],
+    "theme": "sand",
+    "cover": "assets/cover-supercoffee.webp",
+    "mobile": "assets/mobile-supercoffee.webp",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "CSS3",
+      "JavaScript",
+      "GSAP"
+    ]
   },
   {
     "id": "gama-seguridad",
     "name": "GAMA Seguridad",
     "category": "corporativos",
     "sector": "Seguridad integral",
-    "description": "Una web institucional que comunica respaldo y profesionalismo.",
+    "description": "Web institucional de una empresa de seguridad integral. Presenta protección ejecutiva, seguridad electrónica y servicios de custodia con una comunicación orientada a consultas y cotizaciones.",
     "url": "https://seguridadgama.com.ar/",
-    "image": "assets/gama-seguridad.webp"
+    "image": "assets/gama-seguridad.webp",
+    "features": [
+      "Áreas de servicio",
+      "Presentación institucional",
+      "Solicitud de cotización"
+    ],
+    "theme": "olive",
+    "cover": "assets/cover-gama-seguridad.webp",
+    "mobile": "assets/mobile-gama-seguridad.webp",
+    "technologies": [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "oner-vfx",
     "name": "ONER VFX",
     "category": "corporativos",
     "sector": "Creatividad & producción",
-    "description": "Un portfolio visual para un estudio de efectos visuales.",
+    "description": "Portfolio de un estudio de efectos visuales. Presenta proyectos y producciones mediante una experiencia centrada en imágenes, para mostrar el estilo y el trabajo del equipo.",
     "url": "",
-    "image": "assets/oner-vfx.webp"
+    "image": "assets/oner-vfx.webp",
+    "theme": "charcoal",
+    "features": [
+      "Portfolio audiovisual",
+      "Proyectos destacados",
+      "Presentación del estudio"
+    ]
   },
   {
     "id": "dra-vanesa-klimaszewski",
     "name": "Dra. Vanesa Klimaszewski",
     "category": "corporativos",
     "sector": "Salud & medicina",
-    "description": "Una presencia cercana, clara y profesional para la atención médica.",
+    "description": "Sitio profesional de una médica de familia y diabetóloga. Reúne su trayectoria, servicios y enfoque de atención, con accesos para coordinar una consulta.",
     "url": "https://doctoravanesaklima.com.ar/",
-    "image": "assets/dra-vanesa-klimaszewski.webp"
+    "image": "assets/dra-vanesa-klimaszewski.webp",
+    "features": [
+      "Perfil profesional",
+      "Servicios médicos",
+      "Contacto para turnos"
+    ],
+    "theme": "ice",
+    "cover": "assets/cover-dra-vanesa-klimaszewski.webp",
+    "mobile": "assets/mobile-dra-vanesa-klimaszewski.webp",
+    "technologies": [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "psicoterapia-pyp",
     "name": "Psicoterapia P&P",
     "category": "corporativos",
     "sector": "Salud & psicoterapia",
-    "description": "Un sitio institucional pensado para acompañar y facilitar el contacto.",
+    "description": "Sitio de un equipo de psicoterapia online en español. Presenta profesionales y servicios, responde consultas frecuentes y facilita el contacto de personas que buscan acompañamiento psicológico.",
     "url": "https://psicoterapiapyp.com/",
-    "image": "assets/psicoterapia-pyp.webp"
+    "image": "assets/psicoterapia-pyp.webp",
+    "features": [
+      "Equipo y servicios",
+      "Preguntas frecuentes",
+      "Formulario de consulta"
+    ],
+    "theme": "olive",
+    "technologies": [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "berenice-cura",
     "name": "Comunidad Sorda Tandil",
     "category": "corporativos",
     "sector": "Comunidad & cultura",
-    "description": "Un espacio accesible para la asociación y el proyecto de Berenice Cura.",
+    "description": "Sitio de la Comunidad Sorda e Hipoacúsica Tandilense y del proyecto de Berenice Cura. Organiza la asociación, sus iniciativas, el libro y las novedades para comunicar su trabajo de inclusión.",
     "url": "https://estudioideamos.github.io/berenice-cura/",
-    "image": "assets/berenice-cura.webp"
+    "image": "assets/berenice-cura.webp",
+    "features": [
+      "Asociación e iniciativas",
+      "Presentación del libro",
+      "Novedades"
+    ],
+    "theme": "slate",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "hvac-prof-demo",
     "name": "HVAC PROF",
     "category": "corporativos",
     "sector": "Industria & climatización",
-    "description": "Servicios, productos y proyectos con una comunicación técnica clara.",
-    "url": "https://estudioideamos.github.io/hvac-prof-demo/",
-    "image": "assets/hvac-prof-demo.webp"
+    "description": "Sitio industrial de una empresa dedicada a fabricar y montar conductos de aire acondicionado y ventilación. Presenta productos, sistemas de unión y proyectos, con contacto para consultas técnicas.",
+    "url": "https://hvacprof.com.ar/",
+    "image": "assets/hvac-prof-demo.webp",
+    "features": [
+      "Productos y servicios",
+      "Proyectos realizados",
+      "Consulta técnica"
+    ],
+    "theme": "slate",
+    "cover": "assets/cover-hvac-prof-demo.webp",
+    "mobile": "assets/mobile-hvac-prof-demo.webp",
+    "technologies": [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "aurea-propiedades",
     "name": "Ideamos Propiedades",
     "category": "corporativos",
     "sector": "Real estate · Demo",
-    "description": "Una propuesta inmobiliaria con catálogo y búsqueda de propiedades.",
+    "description": "Demo de una web inmobiliaria con identidad editorial. Permite explorar una cartera de propiedades y buscar por tipo de operación y zona, junto con contenidos sobre servicios y tasaciones.",
     "url": "https://estudioideamos.github.io/aurea-propiedades/",
-    "image": "assets/aurea-propiedades.webp"
+    "image": "assets/aurea-propiedades.webp",
+    "features": [
+      "Catálogo inmobiliario",
+      "Filtros de búsqueda",
+      "Consulta de tasación"
+    ],
+    "theme": "olive",
+    "cover": "assets/cover-aurea-propiedades.webp",
+    "mobile": "assets/mobile-aurea-propiedades.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "exelsia-sistema",
     "name": "Exelsia",
     "category": "apps",
     "sector": "Gestión & comercio exterior",
-    "description": "Una plataforma para organizar operaciones, clientes y documentación.",
+    "description": "Plataforma de operaciones de comercio exterior. Su propuesta reúne clientes, operaciones y documentación en un panel de gestión con acceso mediante cuenta de usuario.",
     "url": "https://exelsia-sistema.vercel.app",
-    "image": "assets/exelsia-sistema.webp"
+    "image": "assets/exelsia-sistema.webp",
+    "features": [
+      "Inicio de sesión",
+      "Gestión de operaciones",
+      "Clientes y documentación"
+    ],
+    "theme": "charcoal",
+    "cover": "assets/cover-exelsia-sistema.webp",
+    "mobile": "assets/mobile-exelsia-sistema.webp",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "ideamos-inmobiliarias-app",
     "name": "Ideamos Inmobiliarias",
     "category": "apps",
     "sector": "Gestión inmobiliaria",
-    "description": "Sitio web y gestión de propiedades con integración de Tokko Broker.",
+    "description": "Plataforma que combina una web inmobiliaria y herramientas de gestión. Presenta administración de propiedades y consultas, junto con opciones de integración con Tokko Broker.",
     "url": "https://propiedades.ideamos.ar/",
-    "image": "assets/ideamos-inmobiliarias-app.webp"
+    "image": "assets/ideamos-inmobiliarias-app.webp",
+    "features": [
+      "Catálogo inmobiliario",
+      "Gestión de consultas",
+      "Integración Tokko Broker"
+    ],
+    "theme": "olive",
+    "cover": "assets/cover-ideamos-inmobiliarias-app.webp",
+    "mobile": "assets/mobile-ideamos-inmobiliarias-app.webp",
+    "technologies": [
+      "React",
+      "Vinext",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "PHP",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "ivess-reggieri-pedidos-demo",
     "name": "Ivess Reggieri",
     "category": "apps",
     "sector": "Pedidos & atención al cliente",
-    "description": "Un canal digital para pedidos, consultas y alta de nuevos clientes.",
+    "description": "Canal digital para clientes y nuevos interesados de Ivess Reggieri. Organiza pedidos, solicitudes de alta y atención comercial en un recorrido directo y adaptable al celular.",
     "url": "https://app.ivessreggieri.com.ar/",
-    "image": "assets/ivess-reggieri-pedidos-demo.webp"
+    "image": "assets/ivess-reggieri-pedidos-demo.webp",
+    "features": [
+      "Pedidos online",
+      "Alta de clientes",
+      "Contacto con asesores"
+    ],
+    "theme": "ice",
+    "cover": "assets/cover-ivess-reggieri-pedidos-demo.webp",
+    "mobile": "assets/mobile-ivess-reggieri-pedidos-demo.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "29bis-cotizador",
     "name": "29 BIS",
     "category": "apps",
     "sector": "Cotización & impresión",
-    "description": "Una herramienta para configurar impresiones y cotizar pedidos online.",
+    "description": "Herramienta para configurar y cotizar trabajos de impresión. El usuario elige papel, formato y cantidad, adjunta archivos y prepara su pedido con el cálculo de precio durante el recorrido.",
     "url": "https://cotizador.29bis.com.ar/",
-    "image": "assets/29bis-cotizador.webp"
+    "image": "assets/29bis-cotizador.webp",
+    "features": [
+      "Cotización automática",
+      "Configuración de impresión",
+      "Carga de archivos"
+    ],
+    "theme": "sand",
+    "cover": "assets/cover-29bis-cotizador.webp",
+    "mobile": "assets/mobile-29bis-cotizador.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "presupuestos-app",
     "name": "Presupuestos Ideamos",
     "category": "apps",
     "sector": "Gestión comercial",
-    "description": "Creación de propuestas comerciales y presupuestos en PDF.",
+    "description": "Aplicación para preparar propuestas comerciales de Ideamos. Permite editar el alcance, las condiciones y los importes, ver el documento en tiempo real y descargarlo en PDF.",
     "url": "https://estudioideamos.github.io/presupuestos-app/",
-    "image": "assets/presupuestos-app.webp"
+    "image": "assets/presupuestos-app.webp",
+    "features": [
+      "Edición de propuestas",
+      "Vista previa",
+      "Exportación a PDF"
+    ],
+    "theme": "orange",
+    "cover": "assets/cover-presupuestos-app.webp",
+    "mobile": "assets/mobile-presupuestos-app.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "ideamos-google-ads-brief",
     "name": "Brief Google Ads",
     "category": "apps",
     "sector": "Formularios & automatización",
-    "description": "Un recorrido guiado para organizar la información de cada campaña.",
+    "description": "Formulario guiado para organizar el inicio de una campaña de Google Ads. Reúne información del negocio, objetivos y público, y guarda el avance en el dispositivo mientras se completa.",
     "url": "https://ads.ideamos.com.ar/",
-    "image": "assets/ideamos-google-ads-brief.webp"
+    "image": "assets/ideamos-google-ads-brief.webp",
+    "features": [
+      "Formulario por pasos",
+      "Guardado local",
+      "Brief comercial"
+    ],
+    "theme": "charcoal",
+    "cover": "assets/cover-ideamos-google-ads-brief.webp",
+    "mobile": "assets/mobile-ideamos-google-ads-brief.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "app-form-ecommerce-ideamos",
     "name": "Brief Ecommerce",
     "category": "apps",
     "sector": "Formularios & automatización",
-    "description": "Una herramienta para reunir el material de nuevos proyectos ecommerce.",
+    "description": "Formulario de inicio para proyectos de tiendas online. Ordena la entrega de marca, catálogo, contenidos y definiciones comerciales mediante un recorrido de pasos con guardado de avance.",
     "url": "https://tienda.ideamos.com.ar/",
-    "image": "assets/app-form-ecommerce-ideamos.webp"
+    "image": "assets/app-form-ecommerce-ideamos.webp",
+    "features": [
+      "Formulario por pasos",
+      "Entrega de materiales",
+      "Guardado local"
+    ],
+    "theme": "charcoal",
+    "cover": "assets/cover-app-form-ecommerce-ideamos.webp",
+    "mobile": "assets/mobile-app-form-ecommerce-ideamos.webp",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "woocommerce-cuotas-sin-interes",
     "name": "Cuotas sin interés",
     "category": "apps",
     "sector": "Extensión para tiendas online",
-    "description": "Desarrollo para WooCommerce que permite mostrar y administrar cuotas sin interés.",
+    "description": "Extensión de WooCommerce desarrollada para mostrar y administrar opciones de cuotas sin interés. Permite comunicar las alternativas de pago dentro de la experiencia de compra de la tienda.",
     "url": "",
-    "image": ""
+    "image": "",
+    "features": [
+      "Opciones de cuotas",
+      "Administración en WordPress",
+      "Integración con productos"
+    ],
+    "theme": "lilac",
+    "technologies": [
+      "WordPress",
+      "WooCommerce",
+      "PHP",
+      "CSS3",
+      "JavaScript"
+    ]
   },
   {
     "id": "woocommerce-product-badges-manager",
     "name": "Product Badges",
     "category": "apps",
     "sector": "Extensión para tiendas online",
-    "description": "Desarrollo para WooCommerce para gestionar etiquetas visuales de productos.",
+    "description": "Extensión de WooCommerce para administrar etiquetas visuales sobre los productos. Ayuda a destacar novedades, promociones u otras características dentro del catálogo de una tienda.",
     "url": "",
-    "image": ""
+    "image": "",
+    "features": [
+      "Etiquetas de producto",
+      "Administración en WordPress",
+      "Identificación visual"
+    ],
+    "theme": "lilac",
+    "technologies": [
+      "WordPress",
+      "WooCommerce",
+      "PHP",
+      "CSS3",
+      "JavaScript"
+    ]
   }
 ];
