@@ -37,7 +37,7 @@ La rama principal requiere pull request y comprobaciones correctas. No se exige 
 
 ## Calidad y límites
 
-Las comprobaciones validan sintaxis, categorías, identificadores únicos, rutas locales, imágenes existentes, enlaces HTTPS, metadatos y presupuesto de peso (2 MB por archivo, 8 MB en total). No prueban la disponibilidad de las webs externas en cada ejecución: requieren revisión periódica. Revisar también filtros, búsqueda, diálogos y escritorio/celular antes de integrar cambios visuales.
+Las comprobaciones validan sintaxis, categorías, identificadores únicos, rutas locales, imágenes existentes, enlaces HTTPS, metadatos y presupuesto de peso (2 MB por archivo, 16 MB en total). No prueban la disponibilidad de las webs externas en cada ejecución: requieren revisión periódica. Revisar también filtros, búsqueda, diálogos y escritorio/celular antes de integrar cambios visuales.
 
 `robots.txt` se incluye como referencia de publicación; en un sitio de proyecto GitHub Pages los rastreadores consultan el archivo de la raíz del dominio, fuera de este repositorio. El sitemap sí está disponible en la ruta del portfolio.
 
@@ -55,11 +55,11 @@ El catálogo reúne proyectos de las cuentas `estudioideamos` e `ideamosestudio`
 
 ## Rendimiento de las imágenes
 
-La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThumbLarge`) con sus anchos reales, `srcset`, carga diferida y dimensiones reservadas. La ficha reutiliza el mockup de escritorio y celular de la galería; no solicita capturas largas. Los originales de captura (`image`, `cover` y `mobile`) no forman parte del despliegue; se conservan en el repositorio como fuentes. Gravedad utiliza una vista estática del encabezado y hero originales del tema. Las extensiones WooCommerce usan interfaces ilustrativas identificadas como tales.
+La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThumbLarge`) con sus anchos reales, `srcset`, carga diferida y dimensiones reservadas. La ficha reutiliza el mockup de escritorio y celular de la galería; no solicita capturas largas. Las capturas de mayor resolución (`cover` y `mobile`) se cargan únicamente al abrir el detalle. Las capturas largas (`image`) se conservan como fuentes y no se publican. Gravedad utiliza una vista estática del encabezado y hero originales del tema. Las extensiones WooCommerce usan interfaces ilustrativas identificadas como tales.
 
 El validador exige variantes responsivas y limita el peso de las miniaturas a 2 MB para todo el catálogo y el sitio completo a 16 MB, incluyendo detalles bajo demanda.
 ## Verificación de rendimiento
 
 Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. La descarga de miniaturas comienza a 300 px del área visible. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.
 
-La ficha usa dos columnas en escritorio (mockup e información) y una columna en móvil. Mantiene descripción, características, tecnologías disponibles y enlace Visitar sitio. Las flechas circulares giran 30 grados con hover/foco y respetan movimiento reducido.
+La ficha presenta un mockup grande de escritorio y celular, sin repetir la tarjeta de la galería, seguido de la información. Incluye navegación anterior/siguiente dentro del filtro y búsqueda activos, también con las teclas izquierda/derecha. Mantiene descripción, características, tecnologías disponibles y enlace Visitar sitio. Las flechas circulares giran 45 grados con hover/foco y respetan movimiento reducido.

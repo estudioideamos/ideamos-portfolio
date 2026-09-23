@@ -5,6 +5,8 @@ const labels = { tiendas: 'Tienda online', corporativos: 'Sitio corporativo', ap
 let active = 'todos';
 let search = '';
 let lastFocus;
+let visibleProjects = [];
+let currentProjectId;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const arrowIcon = "<svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg>";
 const isPagesDemo = project => Boolean(project.url && new URL(project.url).hostname.endsWith('.github.io'));
@@ -43,7 +45,9 @@ const previewObserver = 'IntersectionObserver' in window ? new IntersectionObser
 function openProject(id) {
   const project = projects.find(p => p.id === id);
   if (!project) return;
-  lastFocus = document.activeElement;
+  const opening = !dialog.open;
+  if (opening) lastFocus = document.activeElement;
+  currentProjectId = id;
   document.querySelector('#dialog-title').textContent = project.name;
   document.querySelector('#dialog-category').textContent = project.sector;
   document.querySelector('#dialog-description').textContent = project.description;
@@ -55,10 +59,11 @@ function openProject(id) {
   preview.className = 'detail-mockup cover-theme-' + (project.theme || 'slate');
   preview.innerHTML = cover(project);
   preview.querySelectorAll('img[data-src]').forEach(img => {
-    img.sizes = img.closest('.cover-phone') ? '(max-width: 800px) 20vw, 150px' : '(max-width: 800px) 75vw, 560px';
+    const phone = Boolean(img.closest('.cover-phone'));
     img.loading = 'eager';
-    img.srcset = img.dataset.srcset;
-    img.src = img.dataset.src;
+    img.removeAttribute('srcset');
+    img.removeAttribute('sizes');
+    img.src = phone ? (project.mobile || project.phoneThumbLarge) : (project.cover || project.thumbLarge);
     delete img.dataset.src;
     delete img.dataset.srcset;
   });
@@ -67,14 +72,18 @@ function openProject(id) {
   link.innerHTML = `Visitar sitio <span>↗</span>`;
   if (project.url) link.href = project.url; else link.removeAttribute('href');
   document.body.classList.add('modal-open');
-  dialog.showModal();
+  const index = visibleProjects.findIndex(p => p.id === id);
+  document.querySelector('#project-position').textContent = (index + 1) + ' / ' + visibleProjects.length;
+  document.querySelectorAll('[data-project-step]').forEach(button => { button.disabled = visibleProjects.length < 2; });
+  if (opening) dialog.showModal();
   document.querySelector('.dialog-scroll').scrollTop = 0;
-  document.querySelector('.close').focus();
+  if (opening) document.querySelector('.close').focus();
 }
 for (const p of projects) searchIndex.set(p.id, normalize(p.name + ' ' + p.sector + ' ' + p.description + ' ' + (p.technologies || []).join(' ')));
 function render() {
   const query = normalize(search);
   const visible = projects.filter(p => (active === 'todos' || p.category === active) && searchIndex.get(p.id).includes(query));
+  visibleProjects = visible;
   grid.innerHTML = visible.map(p => `<article class="project"><button class="preview cover-theme-${escape(p.theme || 'slate')}" data-project="${escape(p.id)}" aria-label="Ver proyecto ${escape(p.name)}">${cover(p)}<span class="preview-label">Conocer el proyecto ↗</span></button><div class="project-meta"><div><h3><button class="project-title" data-project="${escape(p.id)}">${escape(p.name)}</button></h3><p>${escape(p.sector)}</p></div>${p.url ? `<a class="project-link" href="${escape(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visitar ${escape(p.name)} (nueva pestaña)">${arrowIcon}</a>` : `<button class="project-link" data-project="${escape(p.id)}" aria-label="Ver diseño de ${escape(p.name)}">${arrowIcon}</button>`}</div><span class="project-type">${labels[p.category]}${isPagesDemo(p) ? ' · Demo' : ''}</span></article>`).join('');
   observePreviews();
   document.querySelector('.result-count').textContent = `${visible.length} proyecto${visible.length === 1 ? '' : 's'} para descubrir`;
@@ -90,6 +99,19 @@ document.querySelectorAll('[data-filter]').forEach(button => button.addEventList
 }));
 document.querySelector('input[type="search"]').addEventListener('input', event => { search = event.target.value; render(); });
 grid.addEventListener('click', event => { const button = event.target.closest('[data-project]'); if (button) openProject(button.dataset.project); });
+function navigateProject(step) {
+  if (visibleProjects.length < 2) return;
+  const index = visibleProjects.findIndex(p => p.id === currentProjectId);
+  openProject(visibleProjects[(index + step + visibleProjects.length) % visibleProjects.length].id);
+}
+document.querySelectorAll('[data-project-step]').forEach(button => button.addEventListener('click', () => navigateProject(Number(button.dataset.projectStep))));
+dialog.addEventListener('keydown', event => {
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.target.closest('input, textarea, select, [contenteditable]')) return;
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    navigateProject(event.key === 'ArrowRight' ? 1 : -1);
+  }
+});
 document.querySelector('.close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {
   if (event.target !== dialog) return;

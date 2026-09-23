@@ -76,40 +76,63 @@
 .cover-phone>img{object-fit:contain}
 
 .project-link .arrow-icon{transform-origin:center;transition:transform .3s cubic-bezier(.22,1,.36,1)}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-link:hover .arrow-icon{transform:rotate(30deg)}}
-@media(prefers-reduced-motion:no-preference){.project-link:focus-visible .arrow-icon{transform:rotate(30deg)}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-link:hover .arrow-icon{transform:rotate(45deg)}}
+@media(prefers-reduced-motion:no-preference){.project-link:focus-visible .arrow-icon{transform:rotate(45deg)}}
 
-/* Compact project sheet: the gallery device composition alongside its context. */
-#project-dialog{width:min(1240px,94vw)}
-#project-dialog .dialog-scroll{padding:28px;min-height:0}
-.project-detail-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,1fr);gap:32px;align-items:center}
-#dialog-image.detail-mockup{position:relative;isolation:isolate;aspect-ratio:1.12;background:var(--cover-bg);color:var(--cover-ink);border:1px solid #ffffff20;border-radius:10px;overflow:hidden}
-.detail-mockup:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 20% 0%,var(--cover-glow),transparent 90%);opacity:.28}
-#project-dialog .project-story{display:flex;flex-direction:column;gap:25px;padding:0;min-width:0}
-#project-dialog .project-stack{border-top:1px solid var(--line);padding-top:24px}
+
+/* Large device presentation; full-resolution captures load only in the open sheet. */
+#project-dialog{width:min(1320px,96vw);max-height:94svh}
+#project-dialog .dialog-top{padding:19px 28px}
+#project-dialog .dialog-scroll{padding:0;min-height:0}
+.project-detail-layout{display:flex;flex-direction:column;gap:0}
+#dialog-image.detail-mockup{position:relative;isolation:isolate;width:100%;aspect-ratio:1.8;background:#111215;border:0;border-radius:0;overflow:hidden;color:var(--cover-ink)}
+.detail-mockup:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,var(--cover-glow),transparent 72%);opacity:.2;z-index:-1}
+#dialog-image .cover-scene:before,#dialog-image .cover-heading,#dialog-image .cover-caption{display:none}
+#dialog-image .cover-desktop{width:72%;height:auto;aspect-ratio:1.44;left:6%;top:5%;border:4px solid #e7e7e5;border-radius:10px;box-shadow:0 24px 60px #0008}
+#dialog-image .cover-desktop>.browser-bar{height:21px;font-size:8px}
+#dialog-image .cover-desktop>img{height:calc(100% - 21px);width:100%;object-fit:cover;object-position:top;border-radius:0}
+#dialog-image .cover-phone{height:82%;width:auto;aspect-ratio:390/844;right:7%;bottom:5%;border:5px solid #24252a;border-radius:23px;box-shadow:0 25px 60px #000a}
+#dialog-image .cover-phone>img{height:100%;width:100%;object-fit:contain;border-radius:16px}
+#dialog-image .phone-camera{height:8px;border-radius:0 0 9px 9px}
+#project-dialog .project-story{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,1fr);gap:50px;padding:30px 6% 38px;border-top:1px solid var(--line);width:100%}
+#project-dialog .project-story:has(.project-stack[hidden]){grid-template-columns:1fr}
 #project-dialog .project-stack[hidden]{display:none}
-#project-dialog #dialog-description{font-size:15px;line-height:1.75;margin:0}
-#project-dialog .detail-label{margin:0 0 12px}
+#project-dialog #dialog-description{font-size:15px;line-height:1.75;max-width:740px;margin:0}
+#project-dialog .detail-label{margin:0 0 14px}
 #project-dialog #dialog-features{margin-top:20px;gap:8px}
 #project-dialog #dialog-features>span{font-size:10px;line-height:1.4;padding:7px 10px}
-#project-dialog #dialog-tech>span{padding:8px 10px}
-#dialog-image .cover-heading>span{font-size:clamp(20px,2vw,29px)}
-#dialog-image .cover-heading>small{font-size:8px}
-#dialog-image .cover-desktop>img{height:calc(100% - 14px);border-radius:0;object-fit:cover}
-#dialog-image .cover-phone>img{height:100%;object-fit:contain;border-radius:8px}
-#dialog-image .cover-caption{font-size:7px}
+#project-dialog #dialog-tech>span{padding:9px 12px}
+#dialog-image .extension-interface{height:calc(100% - 21px);gap:24px}
+#dialog-image .extension-interface>strong{font-size:clamp(22px,3vw,42px)}
+#dialog-image .extension-mobile>strong{font-size:clamp(35px,5vw,75px)}
 @media(max-width:800px){
-  #project-dialog{width:94vw;max-height:94svh}
-  #project-dialog .dialog-scroll{padding:16px}
-  .project-detail-layout{grid-template-columns:minmax(0,1fr);gap:25px}
-  #project-dialog .project-story{gap:22px;padding:0 4px 6px}
-  #project-dialog #dialog-description{font-size:14px;line-height:1.7}
-  #dialog-image .cover-heading>span{font-size:20px}
-  #dialog-image .cover-heading>small{font-size:6px}
-  #dialog-image .cover-caption{font-size:5px}
-  #dialog-image .cover-desktop>img{height:calc(100% - 10px)}
-  #project-dialog .dialog-footer>span{font-size:7px;max-width:100px;line-height:1.6}
+ #project-dialog{width:96vw;max-height:94svh}
+ #project-dialog .dialog-top{padding:16px}
+ #project-dialog .dialog-top h2{font-size:22px}
+ #dialog-image.detail-mockup{aspect-ratio:1.12}
+ #dialog-image .cover-desktop{width:90%;left:3%;top:6%;border-width:2px;border-radius:6px}
+ #dialog-image .cover-desktop>.browser-bar{height:12px;font-size:5px}
+ #dialog-image .cover-desktop>img{height:calc(100% - 12px)}
+ #dialog-image .cover-phone{height:65%;right:4%;bottom:6%;border-width:3px;border-radius:14px}
+ #dialog-image .cover-phone>img{border-radius:10px}
+ #dialog-image .phone-camera{height:5px}
+ #project-dialog .project-story{grid-template-columns:1fr;gap:26px;padding:24px 22px 30px}
+ #project-dialog #dialog-description{font-size:14px;line-height:1.7}
+ #project-dialog .dialog-footer>span{font-size:7px;max-width:100px;line-height:1.6}
+ #dialog-image .extension-interface{height:calc(100% - 12px);gap:12px}
 }
-@media(max-width:480px){#dialog-image .cover-desktop>img{height:calc(100% - 13px)}}
+@media(min-width:801px){
+ #dialog-image.detail-mockup{height:min(58svh,640px);aspect-ratio:auto}
+ #dialog-image .cover-scene{position:relative;width:min(100%,92.8svh,1024px);height:100%;margin-inline:auto}
+ #dialog-image .cover-desktop{width:auto;height:88%;aspect-ratio:1.44;left:3%;top:6%}
+ #dialog-image .cover-phone{height:82%;right:3%;bottom:5%}
+}
 
-@media(min-width:801px){#dialog-image.detail-mockup{width:100%;max-width:calc(103.04svh - 246.4px);justify-self:center}}
+/* Keep project navigation reachable while reading the detail. */
+.project-navigation{display:flex;align-items:center;gap:16px}
+.project-navigation button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:44px;min-height:44px;border:1px solid #ffffff30;border-radius:24px;padding:8px 14px;color:var(--ink);background:transparent;font-size:11px;transition:background .2s,border-color .2s}
+.project-navigation button:hover:not(:disabled){background:#ff620020;border-color:var(--orange)}
+.project-navigation button:disabled{opacity:.3;cursor:default}
+.project-navigation svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+#project-position{min-width:42px;text-align:center;font-size:11px;color:#aaa;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.project-navigation{gap:7px}.project-navigation button{padding:10px;width:44px}.project-navigation button span{display:none}#project-dialog .dialog-footer{gap:8px;padding:12px}.dialog-footer .contact{padding:10px 14px;gap:12px;font-size:11px}#project-position{font-size:10px;min-width:36px}}
