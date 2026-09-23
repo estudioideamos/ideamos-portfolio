@@ -687,7 +687,7 @@ window.PROJECTS = [
   },
   {
     "id": "mirtatulaj",
-    "name": "Mirtatulaj",
+    "name": "Mirta Tulaj",
     "category": "tiendas",
     "sector": "Pelucas & extensiones",
     "description": "Sitio y tienda de pelucas naturales, postizos y extensiones. Presenta los productos y servicios de la marca, con información para elegir una solución y contactar al equipo para recibir asesoramiento.",
@@ -1286,3 +1286,4 @@ window.PROJECTS = [
     ]
   }
 ];
+
