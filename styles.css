@@ -51,3 +51,22 @@
 @media(max-width:760px){.cover-heading>span{font-size:16px}.cover-heading>small{font-size:6px;letter-spacing:.7px}.cover-desktop{border-width:2px}.cover-desktop>.browser-bar{height:10px;font-size:4px}.cover-desktop>img{height:calc(100% - 10px)}.cover-phone{border-width:2px;border-radius:8px}.cover-phone>img{border-radius:6px}.cover-caption{font-size:5px;letter-spacing:.6px}.plugin-caption{font-size:6px}.plugin-art strong{font-size:21px}.plugin-art .symbol{font-size:40px}.plugin-sample{font-size:7px;margin-top:12px;padding:6px}.plugin-sample span{font-size:6px}.project-story{grid-template-columns:1fr;gap:23px;padding:8px 4px 23px}.dialog-scroll #dialog-description{font-size:14px}.detail-preview-title{font-size:7px}.detail-preview-title>span:last-child{display:none}}
 @media(max-width:480px){.project .preview{aspect-ratio:1.12}.cover-heading>span{font-size:21px}.cover-heading>small{font-size:7px;letter-spacing:1.3px}.cover-desktop{border-width:3px}.cover-desktop>.browser-bar{height:13px;font-size:5px}.cover-desktop>img{height:calc(100% - 13px)}.cover-phone{border-width:3px;border-radius:12px}.cover-phone>img{border-radius:8px}.cover-caption{font-size:6px;letter-spacing:1px}.plugin-caption{font-size:8px}.plugin-art strong{font-size:29px}.plugin-art .symbol{font-size:68px}.plugin-sample{font-size:10px;padding:8px 14px}.plugin-sample span{font-size:9px}.preview-label{display:block;opacity:1;transform:translate(-50%,0);font-size:9px;padding:8px 13px;background:#08090bdd;color:#fff;border:1px solid #ffffff33;bottom:10px}}
 .projects .project .preview{background:var(--cover-bg)}
+/* Keep device edges and small text sharp; avoid rotated screenshot resampling. */
+.cover-desktop,.desktop-only-cover .cover-desktop{transform:none}
+.cover-phone{transform:none}
+.preview:hover .cover-desktop,.preview:focus-visible .cover-desktop{transform:translateY(-4px)}
+.preview:hover .cover-phone,.preview:focus-visible .cover-phone{transform:translateY(-6px)}
+.cover-desktop>img,.cover-phone>img{image-rendering:auto}
+.extension-interface{height:calc(100% - 14px);background:#f7f3ff;padding:7%;display:flex;flex-direction:column;gap:12px;color:#2e2041;text-align:left}
+.extension-tag{font:7px Arial,sans-serif;letter-spacing:1px;color:#725598}
+.extension-interface>strong{font:800 clamp(15px,1.8vw,25px)/1.1 Gilroy,Arial,sans-serif;max-width:80%}
+.extension-product{display:flex;align-items:center;gap:12px;background:white;padding:10px;border-radius:5px;border:1px solid #dacde8}
+.extension-product-icon{font:800 25px Gilroy,Arial,sans-serif;color:#8055aa}
+.extension-product b{display:block;font:700 9px Arial,sans-serif}.extension-product div>span{display:block;font:7px Arial,sans-serif;color:#907e9d;margin-top:6px}
+.extension-mobile{height:100%;background:#f7f3ff;display:flex;flex-direction:column;align-items:center;padding:20% 6% 8%;color:#4e3466;gap:8px}
+.extension-mobile>span{font:800 8px Gilroy,Arial,sans-serif}.extension-mobile>strong{font:800 35px Gilroy,Arial,sans-serif;margin-top:15%}.extension-mobile>b{font:700 7px Arial,sans-serif;border-radius:3px;background:#765298;color:white;padding:5px}.extension-mobile>i{height:4px;border-radius:3px;background:#dccfe9;width:75%}.extension-mobile>small{font:6px Arial,sans-serif;margin-top:auto}
+@media(max-width:480px){.extension-interface>strong{font-size:24px}}
+
+/* Fixed geometry keeps arrow artwork centered independently of font metrics. */
+.project-link{padding:0;line-height:1;display:grid;place-items:center}
+.arrow-icon{display:block;width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
