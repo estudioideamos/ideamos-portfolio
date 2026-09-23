@@ -19,7 +19,7 @@ for (const p of projects) {
   assert(['tiendas', 'corporativos', 'apps'].includes(p.category), `Invalid category: ${p.id}`);
   for (const key of ['name', 'sector', 'description']) assert(typeof p[key] === 'string' && p[key].trim(), `Missing ${key}: ${p.id}`);
   if (p.url) { const url = new URL(p.url); assert(url.protocol === 'https:' && !url.username && !url.password, `Unsafe URL: ${p.id}`); }
-  for (const field of ['image', 'thumb', 'thumbLarge', 'phoneThumb', 'phoneThumbLarge']) if (p[field]) local(p[field]);
+  for (const field of ['thumb', 'thumbLarge', 'phoneThumb', 'phoneThumbLarge']) if (p[field]) local(p[field]);
   if (p.theme) assert(['slate','sand','olive','lilac','coral','ice','charcoal','orange'].includes(p.theme), 'Invalid cover theme');
   for (const key of ['technologies','features']) if (p[key]) assert(Array.isArray(p[key]) && p[key].every(v => typeof v === 'string' && v.trim()), 'Invalid project details');
 }

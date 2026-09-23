@@ -76,5 +76,40 @@
 .cover-phone>img{object-fit:contain}
 
 .project-link .arrow-icon{transform-origin:center;transition:transform .3s cubic-bezier(.22,1,.36,1)}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-link:hover .arrow-icon{transform:rotate(15deg)}}
-@media(prefers-reduced-motion:no-preference){.project-link:focus-visible .arrow-icon{transform:rotate(15deg)}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-link:hover .arrow-icon{transform:rotate(30deg)}}
+@media(prefers-reduced-motion:no-preference){.project-link:focus-visible .arrow-icon{transform:rotate(30deg)}}
+
+/* Compact project sheet: the gallery device composition alongside its context. */
+#project-dialog{width:min(1240px,94vw)}
+#project-dialog .dialog-scroll{padding:28px;min-height:0}
+.project-detail-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,1fr);gap:32px;align-items:center}
+#dialog-image.detail-mockup{position:relative;isolation:isolate;aspect-ratio:1.12;background:var(--cover-bg);color:var(--cover-ink);border:1px solid #ffffff20;border-radius:10px;overflow:hidden}
+.detail-mockup:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 20% 0%,var(--cover-glow),transparent 90%);opacity:.28}
+#project-dialog .project-story{display:flex;flex-direction:column;gap:25px;padding:0;min-width:0}
+#project-dialog .project-stack{border-top:1px solid var(--line);padding-top:24px}
+#project-dialog .project-stack[hidden]{display:none}
+#project-dialog #dialog-description{font-size:15px;line-height:1.75;margin:0}
+#project-dialog .detail-label{margin:0 0 12px}
+#project-dialog #dialog-features{margin-top:20px;gap:8px}
+#project-dialog #dialog-features>span{font-size:10px;line-height:1.4;padding:7px 10px}
+#project-dialog #dialog-tech>span{padding:8px 10px}
+#dialog-image .cover-heading>span{font-size:clamp(20px,2vw,29px)}
+#dialog-image .cover-heading>small{font-size:8px}
+#dialog-image .cover-desktop>img{height:calc(100% - 14px);border-radius:0;object-fit:cover}
+#dialog-image .cover-phone>img{height:100%;object-fit:contain;border-radius:8px}
+#dialog-image .cover-caption{font-size:7px}
+@media(max-width:800px){
+  #project-dialog{width:94vw;max-height:94svh}
+  #project-dialog .dialog-scroll{padding:16px}
+  .project-detail-layout{grid-template-columns:minmax(0,1fr);gap:25px}
+  #project-dialog .project-story{gap:22px;padding:0 4px 6px}
+  #project-dialog #dialog-description{font-size:14px;line-height:1.7}
+  #dialog-image .cover-heading>span{font-size:20px}
+  #dialog-image .cover-heading>small{font-size:6px}
+  #dialog-image .cover-caption{font-size:5px}
+  #dialog-image .cover-desktop>img{height:calc(100% - 10px)}
+  #project-dialog .dialog-footer>span{font-size:7px;max-width:100px;line-height:1.6}
+}
+@media(max-width:480px){#dialog-image .cover-desktop>img{height:calc(100% - 13px)}}
+
+@media(min-width:801px){#dialog-image.detail-mockup{width:100%;max-width:calc(103.04svh - 246.4px);justify-self:center}}
