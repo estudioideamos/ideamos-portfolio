@@ -10,10 +10,6 @@ const arrowIcon = "<svg class=\"arrow-icon\" viewBox=\"0 0 24 24\" aria-hidden=\
 const isPagesDemo = project => Boolean(project.url && new URL(project.url).hostname.endsWith('.github.io'));
 const searchIndex = new Map();
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-function art(project) {
-  const cuotas = project.id.includes('cuotas');
-  return `<div class="plugin-art"><span class="plugin-caption">WOOCOMMERCE / EXTENSIÓN</span><span class="symbol">${cuotas ? '3×' : '✦'}</span><strong>${cuotas ? 'Más formas<br>de comprar.' : 'Productos que<br>se destacan.'}</strong><div class="plugin-sample">${cuotas ? '3 cuotas sin interés' : '<span>NUEVO</span><span>OFERTA</span>'}</div><small>${escape(project.name)}</small></div>`;
-}
 function cover(project) {
   if (!project.image) return `<div class="cover-scene has-mobile cover-extension"><div class="cover-heading"><span>${escape(project.name)}</span><small>EXTENSIÓN WOOCOMMERCE · VISTA ILUSTRATIVA</small></div><div class="cover-desktop"><div class="browser-bar"><i></i><i></i><i></i><span>WooCommerce / Ideamos</span></div><div class="extension-interface"><span class="extension-tag">WOOCOMMERCE</span><strong>${project.id.includes('cuotas') ? 'Comprá en cuotas.' : 'Hacé destacar tus productos.'}</strong><div class="extension-product"><span class="extension-product-icon">${project.id.includes('cuotas') ? '3×' : '✦'}</span><div><b>${project.id.includes('cuotas') ? 'Cuotas sin interés' : 'Etiquetas de producto'}</b><span>Diseñado por Ideamos</span></div></div></div></div><div class="cover-phone"><span class="phone-camera" aria-hidden="true"></span><div class="extension-mobile"><span>ideamos</span><strong>${project.id.includes('cuotas') ? '3×' : '✦'}</strong><b>${project.id.includes('cuotas') ? 'Sin interés' : 'NOVEDAD'}</b><i></i><i></i><small>WooCommerce</small></div></div><span class="cover-caption">IDEAMOS · DISEÑO DIGITAL</span></div>`;
 
@@ -55,7 +51,17 @@ function openProject(id) {
   const stack = document.querySelector('.project-stack');
   stack.hidden = !project.technologies?.length;
   document.querySelector('#dialog-tech').innerHTML = (project.technologies || []).map(t => `<span>${escape(t)}</span>`).join('');
-  document.querySelector('#dialog-image').innerHTML = project.image ? `<img src="${escape(project.image)}" alt="Diseño del proyecto ${escape(project.name)}" decoding="async" width="${project.imageWidth}" height="${project.imageHeight}">` : art(project);
+  const preview = document.querySelector('#dialog-image');
+  preview.className = 'detail-mockup cover-theme-' + (project.theme || 'slate');
+  preview.innerHTML = cover(project);
+  preview.querySelectorAll('img[data-src]').forEach(img => {
+    img.sizes = img.closest('.cover-phone') ? '(max-width: 800px) 20vw, 150px' : '(max-width: 800px) 75vw, 560px';
+    img.loading = 'eager';
+    img.srcset = img.dataset.srcset;
+    img.src = img.dataset.src;
+    delete img.dataset.src;
+    delete img.dataset.srcset;
+  });
   const link = document.querySelector('#dialog-link');
   link.hidden = !project.url;
   link.innerHTML = `Visitar sitio <span>↗</span>`;

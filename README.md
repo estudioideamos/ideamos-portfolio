@@ -55,9 +55,11 @@ El catálogo reúne proyectos de las cuentas `estudioideamos` e `ideamosestudio`
 
 ## Rendimiento de las imágenes
 
-La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThumbLarge`) con sus anchos reales, `srcset`, carga diferida y dimensiones reservadas. Las imágenes de detalle solo se solicitan al abrir la ficha. Los originales de captura (`cover` y `mobile`) no forman parte del despliegue; se conservan en el repositorio como fuentes. Gravedad utiliza una vista estática del encabezado y hero originales del tema. Las extensiones WooCommerce usan interfaces ilustrativas identificadas como tales.
+La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThumbLarge`) con sus anchos reales, `srcset`, carga diferida y dimensiones reservadas. La ficha reutiliza el mockup de escritorio y celular de la galería; no solicita capturas largas. Los originales de captura (`image`, `cover` y `mobile`) no forman parte del despliegue; se conservan en el repositorio como fuentes. Gravedad utiliza una vista estática del encabezado y hero originales del tema. Las extensiones WooCommerce usan interfaces ilustrativas identificadas como tales.
 
 El validador exige variantes responsivas y limita el peso de las miniaturas a 2 MB para todo el catálogo y el sitio completo a 16 MB, incluyendo detalles bajo demanda.
 ## Verificación de rendimiento
 
 Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. La descarga de miniaturas comienza a 300 px del área visible. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.
+
+La ficha usa dos columnas en escritorio (mockup e información) y una columna en móvil. Mantiene descripción, características, tecnologías disponibles y enlace Visitar sitio. Las flechas circulares giran 30 grados con hover/foco y respetan movimiento reducido.
