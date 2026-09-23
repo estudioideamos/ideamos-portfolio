@@ -74,3 +74,7 @@
 /* Preserve the complete mobile viewport inside every device frame. */
 .cover-phone{height:auto;aspect-ratio:390/844}
 .cover-phone>img{object-fit:contain}
+
+.project-link .arrow-icon{transform-origin:center;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.project-link:hover .arrow-icon{transform:rotate(15deg)}}
+@media(prefers-reduced-motion:no-preference){.project-link:focus-visible .arrow-icon{transform:rotate(15deg)}}
