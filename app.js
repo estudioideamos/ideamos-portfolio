@@ -6,6 +6,7 @@ let active = 'todos';
 let search = '';
 let lastFocus;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isPagesDemo = project => Boolean(project.url && new URL(project.url).hostname.endsWith('.github.io'));
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 function art(project) {
   const cuotas = project.id.includes('cuotas');
@@ -30,6 +31,7 @@ function openProject(id) {
   document.querySelector('#dialog-image').innerHTML = project.image ? `<img src="${escape(project.image)}" alt="Diseño del proyecto ${escape(project.name)}" decoding="async">` : art(project);
   const link = document.querySelector('#dialog-link');
   link.hidden = !project.url;
+  link.innerHTML = `${isPagesDemo(project) ? 'Ver demo en Pages' : 'Visitar sitio'} <span>↗</span>`;
   if (project.url) link.href = project.url; else link.removeAttribute('href');
   document.body.classList.add('modal-open');
   dialog.showModal();
@@ -38,7 +40,7 @@ function openProject(id) {
 }
 function render() {
   const visible = projects.filter(p => (active === 'todos' || p.category === active) && normalize(p.name + ' ' + p.sector + ' ' + p.description + ' ' + (p.technologies || []).join(' ')).includes(normalize(search)));
-  grid.innerHTML = visible.map(p => `<article class="project"><button class="preview cover-theme-${escape(p.theme || 'slate')}" data-project="${escape(p.id)}" aria-label="Ver proyecto ${escape(p.name)}">${cover(p)}<span class="preview-label">Conocer el proyecto ↗</span></button><div class="project-meta"><div><h3><button class="project-title" data-project="${escape(p.id)}">${escape(p.name)}</button></h3><p>${escape(p.sector)}</p></div>${p.url ? `<a class="project-link" href="${escape(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visitar ${escape(p.name)} (nueva pestaña)">↗</a>` : `<button class="project-link" data-project="${escape(p.id)}" aria-label="Ver diseño de ${escape(p.name)}">↗</button>`}</div><span class="project-type">${labels[p.category]}</span></article>`).join('');
+  grid.innerHTML = visible.map(p => `<article class="project"><button class="preview cover-theme-${escape(p.theme || 'slate')}" data-project="${escape(p.id)}" aria-label="Ver proyecto ${escape(p.name)}">${cover(p)}<span class="preview-label">Conocer el proyecto ↗</span></button><div class="project-meta"><div><h3><button class="project-title" data-project="${escape(p.id)}">${escape(p.name)}</button></h3><p>${escape(p.sector)}</p></div>${p.url ? `<a class="project-link" href="${escape(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visitar ${escape(p.name)} (nueva pestaña)">↗</a>` : `<button class="project-link" data-project="${escape(p.id)}" aria-label="Ver diseño de ${escape(p.name)}">↗</button>`}</div><span class="project-type">${labels[p.category]}${isPagesDemo(p) ? ' · Demo' : ''}</span></article>`).join('');
   document.querySelector('.result-count').textContent = `${visible.length} proyecto${visible.length === 1 ? '' : 's'} para descubrir`;
   document.querySelector('.empty').hidden = visible.length !== 0;
   document.querySelectorAll('[data-filter]').forEach(button => {
