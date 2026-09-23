@@ -40,6 +40,8 @@ assert(total < 16 * 1024 * 1024, 'Site exceeds 16 MB including on-demand detail 
 const galleryBytes = projects.reduce((sum, p) => sum + ['thumb', 'phoneThumb'].reduce((n, key) => n + (p[key] ? fs.statSync(path.join(root, p[key])).size : 0), 0), 0);
 assert(galleryBytes < 2 * 1024 * 1024, 'Small gallery images exceed 2 MB');
 for (const p of projects.filter(p => p.image)) {
+  assert(p.mobile && fs.existsSync(path.join(root, p.mobile)), `Missing mobile capture: ${p.id}`);
+  assert(p.mobileWidth > 0 && Math.abs(p.mobileHeight / p.mobileWidth - 844 / 390) < 0.04, `Unexpected mobile viewport: ${p.id}`);
   for (const key of ['thumb','thumbLarge','phoneThumb','phoneThumbLarge']) {
     assert(p[key] && Number.isInteger(p[key + 'Width']) && p[key + 'Width'] > 0, `Missing responsive asset: ${p.id}/${key}`);
   }
