@@ -29,7 +29,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-sphere-design.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "editorial-argenta",
@@ -66,7 +68,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-editorial-argenta.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "mayorista-2020",
@@ -100,7 +104,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-mayorista-2020.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "aquapuel",
@@ -139,7 +145,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-aquapuel.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "maguimel",
@@ -177,7 +185,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-maguimel.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "krk-latinoamericana",
@@ -214,7 +224,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-krk-latinoamericana.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "glix",
@@ -247,7 +259,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-glix.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "vatten",
@@ -281,7 +295,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-vatten.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "stroma",
@@ -318,7 +334,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-stroma.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "ideamosdemo",
@@ -354,7 +372,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-ideamosdemo.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "ideamos-internacional",
@@ -391,7 +411,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-internacional.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "gravedad-store",
@@ -426,7 +448,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-gravedad-store.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "frosz-gelato-fit-demo",
@@ -458,7 +482,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-frosz-gelato-fit-demo.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "mr-ingenieria-estructural",
@@ -490,7 +516,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-mr-ingenieria-estructural.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "trebol-cafe",
@@ -498,7 +526,7 @@ window.PROJECTS = [
     "category": "tiendas",
     "sector": "Café de especialidad",
     "description": "Tienda online de café y equipamiento. La propuesta organiza productos para que el visitante pueda explorar la oferta y conocer las opciones de la marca en una experiencia de compra con identidad visual propia.",
-    "url": "",
+    "url": "https://ideamos.ar/cafe/",
     "image": "assets/trebol-cafe.webp",
     "theme": "olive",
     "features": [
@@ -515,7 +543,10 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-trebol-cafe.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1000,
-    "imageHeight": 755
+    "imageHeight": 755,
+    "mobile": "assets/mobile-trebol-cafe.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "grosz-training-web",
@@ -550,7 +581,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-grosz-training-web.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "raisa-joya",
@@ -558,7 +591,7 @@ window.PROJECTS = [
     "category": "tiendas",
     "sector": "Joyería & accesorios",
     "description": "Tienda online de joyería y accesorios. El diseño pone las piezas en primer plano y organiza la colección para facilitar el descubrimiento de productos y la navegación del catálogo.",
-    "url": "",
+    "url": "https://ideamos.ar/raisa/",
     "image": "assets/raisa-joya.webp",
     "theme": "sand",
     "features": [
@@ -575,7 +608,10 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-raisa-joya.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1000,
-    "imageHeight": 755
+    "imageHeight": 755,
+    "mobile": "assets/mobile-raisa-joya.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "mosaicos-mc-web",
@@ -607,7 +643,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-mosaicos-mc-web.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 2400,
-    "imageHeight": 1667
+    "imageHeight": 1667,
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "byte-conectividad",
@@ -643,21 +681,23 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-byte-conectividad.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "mirtatulaj",
     "name": "Mirtatulaj",
     "category": "tiendas",
-    "sector": "Moda & diseño",
-    "description": "Tienda online de moda. Combina una presentación visual de las colecciones con un catálogo que permite recorrer la propuesta de indumentaria de la marca.",
-    "url": "",
+    "sector": "Pelucas & extensiones",
+    "description": "Sitio y tienda de pelucas naturales, postizos y extensiones. Presenta los productos y servicios de la marca, con información para elegir una solución y contactar al equipo para recibir asesoramiento.",
+    "url": "https://mirtatulajpelucas.com.ar/",
     "image": "assets/mirtatulaj.webp",
     "theme": "coral",
     "features": [
-      "Colecciones de moda",
-      "Catálogo de productos",
-      "Diseño ecommerce"
+      "Pelucas naturales",
+      "Postizos y extensiones",
+      "Asesoramiento personalizado"
     ],
     "thumb": "assets/thumb-mirtatulaj.webp",
     "thumbWidth": 480,
@@ -667,8 +707,12 @@ window.PROJECTS = [
     "phoneThumbWidth": 180,
     "phoneThumbLarge": "assets/phoneThumbLarge-mirtatulaj.webp",
     "phoneThumbLargeWidth": 390,
-    "imageWidth": 1000,
-    "imageHeight": 755
+    "imageWidth": 2400,
+    "imageHeight": 1667,
+    "mobile": "assets/mobile-mirtatulaj.webp",
+    "cover": "assets/cover-mirtatulaj.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "supercoffee",
@@ -704,7 +748,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-supercoffee.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "gama-seguridad",
@@ -737,7 +783,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-gama-seguridad.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1444
+    "imageHeight": 1444,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "oner-vfx",
@@ -745,7 +793,7 @@ window.PROJECTS = [
     "category": "corporativos",
     "sector": "Creatividad & producción",
     "description": "Portfolio de un estudio de efectos visuales. Presenta proyectos y producciones mediante una experiencia centrada en imágenes, para mostrar el estilo y el trabajo del equipo.",
-    "url": "",
+    "url": "https://oner-vfx.com/",
     "image": "assets/oner-vfx.webp",
     "theme": "charcoal",
     "features": [
@@ -762,7 +810,10 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-oner-vfx.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1000,
-    "imageHeight": 755
+    "imageHeight": 755,
+    "mobile": "assets/mobile-oner-vfx.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "dra-vanesa-klimaszewski",
@@ -795,7 +846,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-dra-vanesa-klimaszewski.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "psicoterapia-pyp",
@@ -826,7 +879,10 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-psicoterapia-pyp.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1000,
-    "imageHeight": 1319
+    "imageHeight": 1319,
+    "mobile": "assets/mobile-psicoterapia-pyp.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "berenice-cura",
@@ -859,7 +915,10 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-berenice-cura.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1000,
-    "imageHeight": 1319
+    "imageHeight": 1319,
+    "mobile": "assets/mobile-berenice-cura.webp",
+    "mobileWidth": 780,
+    "mobileHeight": 1688
   },
   {
     "id": "hvac-prof-demo",
@@ -892,7 +951,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-hvac-prof-demo.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "aurea-propiedades",
@@ -928,7 +989,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-aurea-propiedades.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "exelsia-sistema",
@@ -965,7 +1028,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-exelsia-sistema.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 764
+    "imageHeight": 764,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "ideamos-inmobiliarias-app",
@@ -1002,7 +1067,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-inmobiliarias-app.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "ivess-reggieri-pedidos-demo",
@@ -1034,7 +1101,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-ivess-reggieri-pedidos-demo.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 764
+    "imageHeight": 764,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "29bis-cotizador",
@@ -1066,7 +1135,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-29bis-cotizador.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1318
+    "imageHeight": 1318,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "presupuestos-app",
@@ -1098,7 +1169,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-presupuestos-app.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1604
+    "imageHeight": 1604,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "ideamos-google-ads-brief",
@@ -1130,7 +1203,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-ideamos-google-ads-brief.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1112
+    "imageHeight": 1112,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "app-form-ecommerce-ideamos",
@@ -1162,7 +1237,9 @@ window.PROJECTS = [
     "phoneThumbLarge": "assets/phoneThumbLarge-app-form-ecommerce-ideamos.webp",
     "phoneThumbLargeWidth": 390,
     "imageWidth": 1100,
-    "imageHeight": 1315
+    "imageHeight": 1315,
+    "mobileWidth": 390,
+    "mobileHeight": 844
   },
   {
     "id": "woocommerce-cuotas-sin-interes",
