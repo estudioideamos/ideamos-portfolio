@@ -19,7 +19,9 @@ for (const p of projects) {
   assert(['tiendas', 'corporativos', 'apps'].includes(p.category), `Invalid category: ${p.id}`);
   for (const key of ['name', 'sector', 'description']) assert(typeof p[key] === 'string' && p[key].trim(), `Missing ${key}: ${p.id}`);
   if (p.url) { const url = new URL(p.url); assert(url.protocol === 'https:' && !url.username && !url.password, `Unsafe URL: ${p.id}`); }
-  if (p.image) local(p.image);
+  for (const field of ['image', 'cover', 'mobile']) if (p[field]) local(p[field]);
+  if (p.theme) assert(['slate','sand','olive','lilac','coral','ice','charcoal','orange'].includes(p.theme), 'Invalid cover theme');
+  for (const key of ['technologies','features']) if (p[key]) assert(Array.isArray(p[key]) && p[key].every(v => typeof v === 'string' && v.trim()), 'Invalid project details');
 }
 for (const file of ['index.html', '404.html', 'styles.css']) {
   for (const match of read(file).matchAll(/(?:src|href)=["']([^"']+)["']|url\(["']?([^)'"\s]+)["']?\)/g)) {

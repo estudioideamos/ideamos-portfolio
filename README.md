@@ -46,3 +46,9 @@ Las comprobaciones validan sintaxis, categorías, identificadores únicos, rutas
 El logo, Gilroy y las vistas de Trébol Café, ONER VFX, Raisa Joya y Mirtatulaj provienen de ideamos.com.ar. Las demás capturas corresponden a los proyectos de Ideamos. Las extensiones se presentan con composiciones tipográficas y no incluyen su código privado. La disponibilidad pública de este repositorio no modifica los derechos sobre marcas, tipografías o material de terceros.
 
 Ver [cómo contribuir](CONTRIBUTING.md) y la [política de seguridad](SECURITY.md).
+
+## Portadas y fichas de proyecto
+
+El catálogo reúne proyectos de las cuentas `estudioideamos` e `ideamosestudio`. Cada ficha puede incluir `features` y `technologies` (listas de textos), `cover` (captura de escritorio), `mobile` (captura móvil), `theme` (slate, sand, olive, lilac, coral, ice, charcoal u orange) e `isNew` (destacado visual).
+
+`image` conserva la vista ampliada. Las portadas se componen con CSS y capturas reales, sin simular interfaces que el proyecto no tiene. Si no hay captura móvil, se muestra solamente escritorio. Las tecnologías se verifican con los archivos y dependencias del repositorio; en los trabajos históricos sin código disponible, la ficha muestra la descripción y el alcance visual sin atribuirles tecnologías no confirmadas.
