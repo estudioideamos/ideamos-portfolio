@@ -82,6 +82,6 @@ Las descripciones explican funcionalidades y finalidad de cada sitio. No se publ
 
 ## Actualización del 1 de octubre de 2026
 
-El catálogo contiene 40 proyectos e incluye El Pampa Hogar. Bogan, Raisa y Argenta recibieron ajustes móviles publicados en WordPress. Mirta Tulaj ya tenía el hero centrado; se renovaron sus capturas. Las fichas de Argenta, Raisa y Mirta muestran las tecnologías verificadas de sus versiones actuales. Ver `site-updates/2026-10-01/README.md`. ONER conserva su enlace y queda pendiente de acceso de edición.
+El catálogo contiene 43 proyectos e incluye El Pampa Hogar. Bogan, Raisa y Argenta recibieron ajustes móviles publicados en WordPress. Mirta Tulaj ya tenía el hero centrado; se renovaron sus capturas. Las fichas de Argenta, Raisa y Mirta muestran las tecnologías verificadas de sus versiones actuales. Ver `site-updates/2026-10-01/README.md`. ONER conserva su enlace y queda pendiente de acceso de edición.
 
 GMC se incorporó como Módulo Arquitectura · GMC: su dominio redirige a moduloarquitectura.uy. Incluye capturas reales responsivas y tecnologías verificadas en el sitio público.
