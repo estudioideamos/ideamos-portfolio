@@ -1,0 +1,9 @@
+@media (max-width:767px){
+.home .raisa-hero{overflow:hidden}
+.home .raisa-hero__content{text-align:center}
+.home .raisa-hero__content>p{margin-left:auto;margin-right:auto}
+.home .raisa-hero__content .raisa-eyebrow,.home .raisa-hero__actions,.home .raisa-hero__proof{justify-content:center}
+.home .raisa-hero__actions{align-items:center}
+}
+
+@media(max-width:360px){.home .raisa-cart-count{right:0}}

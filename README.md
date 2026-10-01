@@ -43,7 +43,7 @@ Las comprobaciones validan sintaxis, categorías, identificadores únicos, rutas
 
 ## Marca y contenido
 
-El logo, Gilroy y las vistas de Trébol Café, ONER VFX, Raisa Joya y Mirtatulaj provienen de ideamos.com.ar. Las demás capturas corresponden a los proyectos de Ideamos. Las extensiones se presentan con composiciones tipográficas y no incluyen su código privado. La disponibilidad pública de este repositorio no modifica los derechos sobre marcas, tipografías o material de terceros.
+El logo, Gilroy y las vistas de Trébol Café, ONER VFX, Raisa Joya y Mirta Tulaj provienen de ideamos.com.ar. Las demás capturas corresponden a los proyectos de Ideamos. Las extensiones se presentan con composiciones tipográficas y no incluyen su código privado. La disponibilidad pública de este repositorio no modifica los derechos sobre marcas, tipografías o material de terceros.
 
 Ver [cómo contribuir](CONTRIBUTING.md) y la [política de seguridad](SECURITY.md).
 
@@ -60,7 +60,7 @@ La galería usa WebP responsivo (`thumb`, `thumbLarge`, `phoneThumb`, `phoneThum
 El validador exige variantes responsivas y limita el peso de las miniaturas a 2 MB para todo el catálogo y el sitio completo a 16 MB, incluyendo detalles bajo demanda.
 ## Verificación de rendimiento
 
-Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. La descarga de miniaturas comienza a 300 px del área visible. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.
+Prueba local en Edge, pantalla de 1440 px y móvil de 390 px, ambos con densidad 2x: 12 y 8 recursos iniciales respectivamente, aproximadamente 609 KB y 289 KB (sin incluir el HTML). Ninguna imagen de detalle se solicita al entrar. Esa medición corresponde a la versión anterior. La galería actual usa carga diferida nativa del navegador para funcionar también sin JavaScript. Se verificaron las 37 portadas, los 37 mockups móviles, búsqueda, filtros, apertura/cierre de ficha, enlaces, ausencia de imágenes rotas y ausencia de desbordes. Estas mediciones locales no equivalen a una puntuación Lighthouse ni a datos de usuarios reales.
 
 La ficha presenta un mockup grande de escritorio y celular, sin repetir la tarjeta de la galería, con la información al costado en escritorio y debajo en móvil. Incluye navegación anterior/siguiente dentro del filtro y búsqueda activos, también con las teclas izquierda/derecha. Mantiene descripción, características, tecnologías disponibles y enlace Visitar sitio. Las flechas circulares giran 45 grados con hover/foco y respetan movimiento reducido.
 
@@ -69,3 +69,17 @@ La ficha presenta un mockup grande de escritorio y celular, sin repetir la tarje
 Se centraron los títulos, textos introductorios y llamadas a la acción en Sphere Design, Editorial Argenta, KRK Latinoamericana, Stroma Services, MR Ingeniería, Grosz Training, Mosaicos MC, Supercoffee, Dra. Vanesa Klimaszewski y Áurea Propiedades. En Brief Google Ads y Brief Ecommerce se centró la introducción, preservando la alineación de los formularios. Los cambios se limitan a pantallas de hasta 767 px.
 
 Los mockups móviles del catálogo se renovaron con capturas reales de esas 12 publicaciones, a 390 × 844 y densidad 2x, más variantes WebP para la galería. La alineación se revisó en 320, 390 y 767 px y se verificaron las publicaciones antes de renovar las capturas.
+
+## Publicación en el dominio principal y consultas
+
+La dirección canónica es `https://ideamos.com.ar/portfolio/`. La versión de GitHub Pages se conserva como alternativa. `scripts/render-html.cjs` genera las tarjetas del catálogo desde `projects.js`, con descripciones y enlaces accesibles sin JavaScript; `app.js` agrega búsqueda, filtros y fichas sin reconstruir la galería.
+
+La publicación en el dominio principal se integra en `public/portfolio/` del repositorio `ideamosestudio/ideamosdemo`, copiando exclusivamente la salida validada `_site/`. Después de actualizar este catálogo, reconstruir y sincronizar esa carpeta, integrar el cambio en main y esperar el workflow del sitio principal. No copiar herramientas, credenciales ni capturas originales.
+
+`analytics.js` utiliza la propiedad GA4 `G-PZH5K8NS3P`, verificada en el contenedor público existente de Ideamos. Registra `click_whatsapp` con `position` (header, closing, project), `project_id` y `project_name`; el formulario alternativo registra `click_contact_form`. Respeta Do Not Track y Global Privacy Control. No se carga también GTM, para evitar duplicar etiquetas. La recepción en los informes de GA4 requiere comprobación dentro de esa cuenta.
+
+Las descripciones explican funcionalidades y finalidad de cada sitio. No se publican cifras de resultados ni testimonios sin evidencia y autorización del cliente.
+
+## Actualización del 1 de octubre de 2026
+
+El catálogo contiene 39 proyectos e incluye El Pampa Hogar. Bogan, Raisa y Argenta recibieron ajustes móviles publicados en WordPress. Mirta Tulaj ya tenía el hero centrado; se renovaron sus capturas. Las fichas de Argenta, Raisa y Mirta muestran las tecnologías verificadas de sus versiones actuales. Ver `site-updates/2026-10-01/README.md`. ONER conserva su enlace y queda pendiente de acceso de edición.
