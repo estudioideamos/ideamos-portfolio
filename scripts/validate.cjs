@@ -7,7 +7,7 @@ const source = read('projects.js').trim();
 assert(source.startsWith('window.PROJECTS = '), 'Unexpected catalog format');
 const projects = JSON.parse(source.slice('window.PROJECTS = '.length).replace(/;$/, ''));
 assert(Array.isArray(projects) && projects.length > 0, 'Empty catalog');
-const files = new Set(['index.html', 'styles.css', 'app.js', 'projects.js', '404.html', 'robots.txt', 'sitemap.xml', '.nojekyll', 'assets/social.jpg']);
+const files = new Set(['index.html', 'styles.css', 'app.js', 'project-card.js', 'analytics.js', 'projects.js', '404.html', 'robots.txt', 'sitemap.xml', '.nojekyll', 'assets/social.jpg']);
 const local = value => {
   assert(/^(?:assets\/)?[a-zA-Z0-9_.-]+$/.test(value) && !value.includes('..'), `Unsafe path: ${value}`);
   files.add(value);
@@ -51,10 +51,20 @@ const html = read('index.html');
 assert(html.includes('Content-Security-Policy') && html.includes("script-src 'self'"), 'Missing script policy');
 assert(!/<script\b[^>]*>(?!\s*<\/script>)[\s\S]*?<\/script>/i.test(html), 'Inline scripts are not permitted');
 assert(html.includes('rel="canonical"') && html.includes('og:image'), 'Missing sharing metadata');
+const rendered = require('./render-html.cjs')(html, projects);
+assert((rendered.match(/data-card=/g) || []).length === projects.length, 'Every project must appear in the published HTML');
+assert(!rendered.includes('<!-- PROJECT_'), 'Unresolved HTML build markers');
+assert(html.match(/<title>(.*?)<\/title>/)[1] === html.match(/property="og:title" content="([^"]+)"/)[1], 'Page and social titles differ');
+for (const p of projects) {
+  const {escape} = require('../project-card.js');
+  assert(rendered.includes(escape(p.description)), 'Missing static description: ' + p.id);
+  if (p.url) assert(rendered.includes('href="' + escape(p.url) + '"'), 'Missing crawlable project URL: ' + p.id);
+}
 console.log(`Validated ${projects.length} projects, ${files.size} publishable files, ${(total / 1024).toFixed(0)} KB`);
 if (process.argv.includes('--build')) {
   const output = path.join(root, '_site');
   fs.rmSync(output, {recursive: true, force: true});
   for (const file of files) { const dest = path.join(output, file); fs.mkdirSync(path.dirname(dest), {recursive: true}); fs.copyFileSync(path.join(root, file), dest); }
+    fs.writeFileSync(path.join(output, 'index.html'), require('./render-html.cjs')(html, projects));
   console.log('Built _site from the explicit public-file allowlist.');
 }
