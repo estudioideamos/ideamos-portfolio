@@ -43,7 +43,7 @@ Las comprobaciones validan sintaxis, categorías, identificadores únicos, rutas
 
 ## Marca y contenido
 
-El logo, Gilroy y las vistas de Trébol Café, ONER VFX, Raisa Joya y Mirta Tulaj provienen de ideamos.com.ar. Las demás capturas corresponden a los proyectos de Ideamos. Las extensiones se presentan con composiciones tipográficas y no incluyen su código privado. La disponibilidad pública de este repositorio no modifica los derechos sobre marcas, tipografías o material de terceros.
+El logo, Gilroy y las vistas de Trébol Café, ONER VFX, Raisa Joyas y Mirta Tulaj provienen de ideamos.com.ar. Las demás capturas corresponden a los proyectos de Ideamos. Las extensiones se presentan con composiciones tipográficas y no incluyen su código privado. La disponibilidad pública de este repositorio no modifica los derechos sobre marcas, tipografías o material de terceros.
 
 Ver [cómo contribuir](CONTRIBUTING.md) y la [política de seguridad](SECURITY.md).
 
