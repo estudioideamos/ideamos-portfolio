@@ -85,3 +85,7 @@ Las descripciones explican funcionalidades y finalidad de cada sitio. No se publ
 El catálogo contiene 43 proyectos e incluye El Pampa Hogar. Bogan, Raisa y Argenta recibieron ajustes móviles publicados en WordPress. Mirta Tulaj ya tenía el hero centrado; se renovaron sus capturas. Las fichas de Argenta, Raisa y Mirta muestran las tecnologías verificadas de sus versiones actuales. Ver `site-updates/2026-10-01/README.md`. ONER conserva su enlace y queda pendiente de acceso de edición.
 
 GMC se incorporó como Módulo Arquitectura · GMC: su dominio redirige a moduloarquitectura.uy. Incluye capturas reales responsivas y tecnologías verificadas en el sitio público.
+
+### Orden de presentación
+
+El orden de `projects.js` es compartido por la galería, los filtros y la navegación del detalle. Primero se muestran los proyectos con `repositoryCreatedAt`, de más reciente a más antiguo según la creación del repositorio en GitHub. Después aparecen los sitios sin fecha registrada, conservando su orden relativo. Los plugins Cuotas sin interés y Product Badges cierran el catálogo. La fecha del repositorio se usa como criterio de orden y no se presenta como fecha de lanzamiento del sitio.
