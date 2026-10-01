@@ -72,10 +72,14 @@ Los mockups móviles del catálogo se renovaron con capturas reales de esas 12 p
 
 ## Publicación en el dominio principal y consultas
 
-La dirección canónica es `https://ideamos.com.ar/portfolio/`. La versión de GitHub Pages se conserva como alternativa. `scripts/render-html.cjs` genera las 38 tarjetas desde `projects.js`, con descripciones y enlaces accesibles sin JavaScript; `app.js` agrega búsqueda, filtros y fichas sin reconstruir la galería.
+La dirección canónica es `https://ideamos.com.ar/portfolio/`. La versión de GitHub Pages se conserva como alternativa. `scripts/render-html.cjs` genera las tarjetas del catálogo desde `projects.js`, con descripciones y enlaces accesibles sin JavaScript; `app.js` agrega búsqueda, filtros y fichas sin reconstruir la galería.
 
 La publicación en el dominio principal se integra en `public/portfolio/` del repositorio `ideamosestudio/ideamosdemo`, copiando exclusivamente la salida validada `_site/`. Después de actualizar este catálogo, reconstruir y sincronizar esa carpeta, integrar el cambio en main y esperar el workflow del sitio principal. No copiar herramientas, credenciales ni capturas originales.
 
 `analytics.js` utiliza la propiedad GA4 `G-PZH5K8NS3P`, verificada en el contenedor público existente de Ideamos. Registra `click_whatsapp` con `position` (header, closing, project), `project_id` y `project_name`; el formulario alternativo registra `click_contact_form`. Respeta Do Not Track y Global Privacy Control. No se carga también GTM, para evitar duplicar etiquetas. La recepción en los informes de GA4 requiere comprobación dentro de esa cuenta.
 
 Las descripciones explican funcionalidades y finalidad de cada sitio. No se publican cifras de resultados ni testimonios sin evidencia y autorización del cliente.
+
+## Actualización del 1 de octubre de 2026
+
+El catálogo contiene 39 proyectos e incluye El Pampa Hogar. Bogan, Raisa y Argenta recibieron ajustes móviles publicados en WordPress. Mirta Tulaj ya tenía el hero centrado; se renovaron sus capturas. Las fichas de Argenta, Raisa y Mirta muestran las tecnologías verificadas de sus versiones actuales. Ver `site-updates/2026-10-01/README.md`. ONER conserva su enlace y queda pendiente de acceso de edición.

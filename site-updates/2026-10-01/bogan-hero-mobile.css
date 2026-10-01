@@ -1,0 +1,6 @@
+@media (max-width:767px){
+.home rs-column[id^="slider-3-slide-"]{text-align:center!important}
+.home rs-layer[id^="slider-3-slide-"][id$="-layer-2"],.home rs-layer[id^="slider-3-slide-"][id$="-layer-5"],.home a[id^="slider-3-slide-"][id$="-layer-3"]{text-align:center!important}
+.home rs-column[id^="slider-3-slide-"]>rs-layer-wrap:has(a[id$="-layer-3"]){display:block!important;text-align:center!important;margin-right:0!important}
+.home rs-column[id^="slider-3-slide-"]>rs-layer-wrap:has(a[id$="-layer-3"]) rs-mask-wrap{overflow:visible!important}
+}

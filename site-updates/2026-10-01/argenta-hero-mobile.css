@@ -1,0 +1,6 @@
+@media (max-width:767px){
+.home .argenta-hero__content{text-align:center}
+.home .argenta-hero__content>p{margin-left:auto;margin-right:auto}
+.home .argenta-hero__content .argenta-eyebrow{justify-content:center}
+.home .argenta-hero__content .argenta-buttons{justify-content:center;align-items:center}
+}
