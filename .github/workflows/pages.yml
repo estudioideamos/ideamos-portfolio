@@ -25,6 +25,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check app.js
+          node --check stories.js
           node --check projects.js
           node --check scripts/validate.cjs
       - name: Validate catalog, assets and publication boundaries
